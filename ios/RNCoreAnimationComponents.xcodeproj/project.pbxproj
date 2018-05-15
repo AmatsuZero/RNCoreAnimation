@@ -1,0 +1,345 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2129D39C20AACB8B002441FD /* RNCoreAnimationComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D39B20AACB8B002441FD /* RNCoreAnimationComponents.m */; };
+		2129D39D20AACB8B002441FD /* RNCoreAnimationComponents.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2129D39A20AACB8B002441FD /* RNCoreAnimationComponents.h */; };
+		2129D3DE20AACD2E002441FD /* JZHCircleLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D3DD20AACD2E002441FD /* JZHCircleLayer.m */; };
+		2129D3E120AAD04C002441FD /* JZHCircleView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D3E020AAD04C002441FD /* JZHCircleView.m */; };
+		2129D3E420AAD1AE002441FD /* JZHCircleViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D3E320AAD1AE002441FD /* JZHCircleViewManager.m */; };
+		2129D45920AADFA8002441FD /* JZHGooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D45820AADFA8002441FD /* JZHGooeySlideMenu.m */; };
+		2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D45B20AAE659002441FD /* JZHSlideMenuButton.m */; };
+		2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D45E20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		2129D39520AACB8B002441FD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				2129D39D20AACB8B002441FD /* RNCoreAnimationComponents.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		2129D39720AACB8B002441FD /* libRNCoreAnimationComponents.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libRNCoreAnimationComponents.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		2129D39A20AACB8B002441FD /* RNCoreAnimationComponents.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RNCoreAnimationComponents.h; sourceTree = "<group>"; };
+		2129D39B20AACB8B002441FD /* RNCoreAnimationComponents.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RNCoreAnimationComponents.m; sourceTree = "<group>"; };
+		2129D3DC20AACD2E002441FD /* JZHCircleLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHCircleLayer.h; sourceTree = "<group>"; };
+		2129D3DD20AACD2E002441FD /* JZHCircleLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHCircleLayer.m; sourceTree = "<group>"; };
+		2129D3DF20AAD04C002441FD /* JZHCircleView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHCircleView.h; sourceTree = "<group>"; };
+		2129D3E020AAD04C002441FD /* JZHCircleView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHCircleView.m; sourceTree = "<group>"; };
+		2129D3E220AAD1AE002441FD /* JZHCircleViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHCircleViewManager.h; sourceTree = "<group>"; };
+		2129D3E320AAD1AE002441FD /* JZHCircleViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHCircleViewManager.m; sourceTree = "<group>"; };
+		2129D45720AADFA8002441FD /* JZHGooeySlideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHGooeySlideMenu.h; sourceTree = "<group>"; };
+		2129D45820AADFA8002441FD /* JZHGooeySlideMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHGooeySlideMenu.m; sourceTree = "<group>"; };
+		2129D45A20AAE659002441FD /* JZHSlideMenuButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHSlideMenuButton.h; sourceTree = "<group>"; };
+		2129D45B20AAE659002441FD /* JZHSlideMenuButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHSlideMenuButton.m; sourceTree = "<group>"; };
+		2129D45D20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHGooeySlideMenuViewManager.h; sourceTree = "<group>"; };
+		2129D45E20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHGooeySlideMenuViewManager.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2129D39420AACB8B002441FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2129D38E20AACB8B002441FD = {
+			isa = PBXGroup;
+			children = (
+				2129D39920AACB8B002441FD /* RNCoreAnimationComponents */,
+				2129D39820AACB8B002441FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		2129D39820AACB8B002441FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2129D39720AACB8B002441FD /* libRNCoreAnimationComponents.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
+			isa = PBXGroup;
+			children = (
+				2129D45620AADF7E002441FD /* GooeySlideMenu */,
+				2129D40C20AAD6B2002441FD /* AnimatedCircleView */,
+				2129D39A20AACB8B002441FD /* RNCoreAnimationComponents.h */,
+				2129D39B20AACB8B002441FD /* RNCoreAnimationComponents.m */,
+			);
+			path = RNCoreAnimationComponents;
+			sourceTree = "<group>";
+		};
+		2129D40C20AAD6B2002441FD /* AnimatedCircleView */ = {
+			isa = PBXGroup;
+			children = (
+				2129D3DC20AACD2E002441FD /* JZHCircleLayer.h */,
+				2129D3DD20AACD2E002441FD /* JZHCircleLayer.m */,
+				2129D3DF20AAD04C002441FD /* JZHCircleView.h */,
+				2129D3E020AAD04C002441FD /* JZHCircleView.m */,
+				2129D3E220AAD1AE002441FD /* JZHCircleViewManager.h */,
+				2129D3E320AAD1AE002441FD /* JZHCircleViewManager.m */,
+			);
+			path = AnimatedCircleView;
+			sourceTree = "<group>";
+		};
+		2129D45620AADF7E002441FD /* GooeySlideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				2129D45720AADFA8002441FD /* JZHGooeySlideMenu.h */,
+				2129D45820AADFA8002441FD /* JZHGooeySlideMenu.m */,
+				2129D45A20AAE659002441FD /* JZHSlideMenuButton.h */,
+				2129D45B20AAE659002441FD /* JZHSlideMenuButton.m */,
+				2129D45D20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.h */,
+				2129D45E20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m */,
+			);
+			path = GooeySlideMenu;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2129D39620AACB8B002441FD /* RNCoreAnimationComponents */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2129D3A020AACB8B002441FD /* Build configuration list for PBXNativeTarget "RNCoreAnimationComponents" */;
+			buildPhases = (
+				2129D39320AACB8B002441FD /* Sources */,
+				2129D39420AACB8B002441FD /* Frameworks */,
+				2129D39520AACB8B002441FD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RNCoreAnimationComponents;
+			productName = RNCoreAnimationComponents;
+			productReference = 2129D39720AACB8B002441FD /* libRNCoreAnimationComponents.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2129D38F20AACB8B002441FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = JZH;
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = Daubert;
+				TargetAttributes = {
+					2129D39620AACB8B002441FD = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 2129D39220AACB8B002441FD /* Build configuration list for PBXProject "RNCoreAnimationComponents" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 2129D38E20AACB8B002441FD;
+			productRefGroup = 2129D39820AACB8B002441FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2129D39620AACB8B002441FD /* RNCoreAnimationComponents */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2129D39320AACB8B002441FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2129D45920AADFA8002441FD /* JZHGooeySlideMenu.m in Sources */,
+				2129D3E120AAD04C002441FD /* JZHCircleView.m in Sources */,
+				2129D3E420AAD1AE002441FD /* JZHCircleViewManager.m in Sources */,
+				2129D3DE20AACD2E002441FD /* JZHCircleLayer.m in Sources */,
+				2129D39C20AACB8B002441FD /* RNCoreAnimationComponents.m in Sources */,
+				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,
+				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		2129D39E20AACB8B002441FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2129D39F20AACB8B002441FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2129D3A120AACB8B002441FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCU9L9SQC4;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2129D3A220AACB8B002441FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TCU9L9SQC4;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/../../react-native/React/**";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2129D39220AACB8B002441FD /* Build configuration list for PBXProject "RNCoreAnimationComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2129D39E20AACB8B002441FD /* Debug */,
+				2129D39F20AACB8B002441FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2129D3A020AACB8B002441FD /* Build configuration list for PBXNativeTarget "RNCoreAnimationComponents" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2129D3A120AACB8B002441FD /* Debug */,
+				2129D3A220AACB8B002441FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2129D38F20AACB8B002441FD /* Project object */;
+}
