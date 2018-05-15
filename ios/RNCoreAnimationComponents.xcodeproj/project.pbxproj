@@ -15,6 +15,7 @@
 		2129D45920AADFA8002441FD /* JZHGooeySlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D45820AADFA8002441FD /* JZHGooeySlideMenu.m */; };
 		2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D45B20AAE659002441FD /* JZHSlideMenuButton.m */; };
 		2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D45E20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m */; };
+		2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D47420AB1AD9002441FD /* RCTConvert+SlideMenu.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -46,6 +47,8 @@
 		2129D45B20AAE659002441FD /* JZHSlideMenuButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHSlideMenuButton.m; sourceTree = "<group>"; };
 		2129D45D20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHGooeySlideMenuViewManager.h; sourceTree = "<group>"; };
 		2129D45E20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHGooeySlideMenuViewManager.m; sourceTree = "<group>"; };
+		2129D47320AB1AD9002441FD /* RCTConvert+SlideMenu.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTConvert+SlideMenu.h"; sourceTree = "<group>"; };
+		2129D47420AB1AD9002441FD /* RCTConvert+SlideMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+SlideMenu.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +109,8 @@
 				2129D45820AADFA8002441FD /* JZHGooeySlideMenu.m */,
 				2129D45A20AAE659002441FD /* JZHSlideMenuButton.h */,
 				2129D45B20AAE659002441FD /* JZHSlideMenuButton.m */,
+				2129D47320AB1AD9002441FD /* RCTConvert+SlideMenu.h */,
+				2129D47420AB1AD9002441FD /* RCTConvert+SlideMenu.m */,
 				2129D45D20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.h */,
 				2129D45E20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m */,
 			);
@@ -173,6 +178,7 @@
 				2129D3E120AAD04C002441FD /* JZHCircleView.m in Sources */,
 				2129D3E420AAD1AE002441FD /* JZHCircleViewManager.m in Sources */,
 				2129D3DE20AACD2E002441FD /* JZHCircleLayer.m in Sources */,
+				2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */,
 				2129D39C20AACB8B002441FD /* RNCoreAnimationComponents.m in Sources */,
 				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,

@@ -89,7 +89,7 @@
 
 - (void)drawRect:(CGRect)rect {
     UIBezierPath *path = [UIBezierPath bezierPath];
-    [path moveToPoint:CGPointMake(0, 0)];
+    [path moveToPoint:CGPointZero];
     [path addLineToPoint:CGPointMake(self.frame.size.width-self.menuBlankWidth, 0)];
     [path addQuadCurveToPoint:CGPointMake(self.frame.size.width-self.menuBlankWidth,
                                           self.frame.size.height)
@@ -98,15 +98,20 @@
     [path closePath];
     CGContextRef context = UIGraphicsGetCurrentContext();
     CGContextAddPath(context, path.CGPath);
-    [self.menuColor set];
+    [_menuColor set];
     CGContextFillPath(context);
 }
 
--(void)animateButtons{
+-(void)animateButtons {
     for (NSInteger i = 0; i < self.subviews.count; i++) {
         UIView *menuButton = self.subviews[i];
         menuButton.transform = CGAffineTransformMakeTranslation(-90, 0);
-        [UIView animateWithDuration:0.7 delay:i*(0.3/self.subviews.count) usingSpringWithDamping:0.6f initialSpringVelocity:0.0f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
+        [UIView animateWithDuration:0.7
+                              delay:i*(0.3/self.subviews.count)
+             usingSpringWithDamping:0.6f
+              initialSpringVelocity:0.0f
+                            options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction
+                         animations:^{
             menuButton.transform =  CGAffineTransformIdentity;
         } completion: nil];
     }
@@ -117,8 +122,14 @@
         self.frame = CGRectMake(-self->keyWindow.frame.size.width/2-self.menuBlankWidth, 0, self->keyWindow.frame.size.width/2+self->_menuBlankWidth, self->keyWindow.frame.size.height);
     }];
     [self beforeAnimation];
-    [UIView animateWithDuration:0.7 delay:0.0f usingSpringWithDamping:0.6f initialSpringVelocity:0.9f options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction animations:^{
-        self->helperSideView.center = CGPointMake(-self->helperSideView.frame.size.height/2, self->helperSideView.frame.size.height/2);
+    [UIView animateWithDuration:0.7
+                          delay:0.0f
+         usingSpringWithDamping:0.6f
+          initialSpringVelocity:0.9f
+                        options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction
+                     animations:^{
+        self->helperSideView.center = CGPointMake(-self->helperSideView.frame.size.height/2,
+                                                  self->helperSideView.frame.size.height/2);
     } completion:^(BOOL finished) {
         [self finishAnimation];
     }];
@@ -134,25 +145,26 @@
           initialSpringVelocity:2.0f
                         options:UIViewAnimationOptionBeginFromCurrentState | UIViewAnimationOptionAllowUserInteraction
                      animations:^{
-        self->helperCenterView.center = CGPointMake(-self->helperSideView.frame.size.height/2,
-                                                    CGRectGetHeight(self->keyWindow.frame)/2);
-    } completion:^(BOOL finished) {
-        [self finishAnimation];
-    }];
+                         self->helperCenterView.center = CGPointMake(-self->helperSideView.frame.size.height/2,
+                                                                     CGRectGetHeight(self->keyWindow.frame)/2);
+                     } completion:^(BOOL finished) {
+                         [self finishAnimation];
+                     }];
     triggered = NO;
 }
 
 //动画之前调用
--(void)beforeAnimation{
+-(void)beforeAnimation {
     if (self.displayLink == nil) {
-        self.displayLink = [CADisplayLink displayLinkWithTarget:self selector:@selector(displayLinkAction:)];
+        self.displayLink = [CADisplayLink displayLinkWithTarget:self
+                                                       selector:@selector(displayLinkAction:)];
         [self.displayLink addToRunLoop:[NSRunLoop mainRunLoop] forMode:NSDefaultRunLoopMode];
     }
     self.animationCount ++;
 }
 
 //动画完成之后调用
--(void)finishAnimation{
+-(void)finishAnimation {
     self.animationCount --;
     if (self.animationCount == 0) {
         [self.displayLink invalidate];
@@ -161,9 +173,8 @@
 }
 
 -(void)displayLinkAction:(CADisplayLink *)dis{
-    CALayer *sideHelperPresentationLayer   =  (CALayer *)[helperSideView.layer presentationLayer];
-    CALayer *centerHelperPresentationLayer =  (CALayer *)[helperCenterView.layer presentationLayer];
-
+    CALayer *sideHelperPresentationLayer   =  [helperSideView.layer presentationLayer];
+    CALayer *centerHelperPresentationLayer =  [helperCenterView.layer presentationLayer];
     CGRect centerRect = [[centerHelperPresentationLayer valueForKeyPath:@"frame"]CGRectValue];
     CGRect sideRect = [[sideHelperPresentationLayer valueForKeyPath:@"frame"]CGRectValue];
     diff = sideRect.origin.x - centerRect.origin.x;
@@ -180,14 +191,15 @@
     blurView = [[UIVisualEffectView alloc] initWithEffect:[UIBlurEffect effectWithStyle:style]];
     blurView.frame = keyWindow.frame;
     blurView.alpha = 0.0f;
+    [self setNeedsDisplay];
 }
 
 - (void)setMenuBlankWidth:(CGFloat)menuBlankWidth {
     _menuBlankWidth = menuBlankWidth;
-     self.frame = CGRectMake(- keyWindow.frame.size.width/2 - menuBlankWidth,
-                             0,
-                             keyWindow.frame.size.width/2 + menuBlankWidth,
-                             keyWindow.frame.size.height);
+    self.frame = CGRectMake(- keyWindow.frame.size.width/2 - menuBlankWidth,
+                            0,
+                            keyWindow.frame.size.width/2 + menuBlankWidth,
+                            keyWindow.frame.size.height);
     [self setNeedsDisplay];
 }
 
@@ -210,11 +222,14 @@
             home_button.bounds = CGRectMake(0, 0, keyWindow.frame.size.width/2 - 20*2, menuButtonHeight);
             home_button.buttonColor = _menuColor;
             [self addSubview:home_button];
-
             __weak typeof(self) WeakSelf = self;
             home_button.buttonClickBlock = ^(){
                 [WeakSelf tapToUntrigger];
-                WeakSelf.menuClickBlock(i,title,titles.count);
+                if (WeakSelf.menuClickBlock) {
+                    WeakSelf.menuClickBlock(@{@"index": @(i),
+                                              @"title": title,
+                                              @"count": @(titles.count)});
+                }
             };
         }
     } else{
@@ -231,10 +246,26 @@
             __weak typeof(self) WeakSelf = self;
             home_button.buttonClickBlock = ^(){
                 [WeakSelf tapToUntrigger];
-                WeakSelf.menuClickBlock(i,title,titles.count);
+                if (WeakSelf.menuClickBlock) {
+                    WeakSelf.menuClickBlock(@{@"index": @(i),
+                                              @"title": title,
+                                              @"count": @(titles.count)});
+                }
             };
         }
     }
+    [self setNeedsDisplay];
+}
+
+- (void)setColor:(NSString *)color {
+    unsigned rgbValue = 0;
+    NSScanner *scanner = [NSScanner scannerWithString:color];
+    [scanner setScanLocation:1]; // bypass '#' character
+    [scanner scanHexInt:&rgbValue];
+    _menuColor = [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0
+                                 green:((rgbValue & 0xFF00) >> 8)/255.0
+                                  blue:(rgbValue & 0xFF)/255.0
+                                 alpha:1.0];
     [self setNeedsDisplay];
 }
 

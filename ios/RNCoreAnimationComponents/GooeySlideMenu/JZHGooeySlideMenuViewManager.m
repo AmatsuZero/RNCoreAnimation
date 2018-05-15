@@ -7,7 +7,40 @@
 //
 
 #import "JZHGooeySlideMenuViewManager.h"
+#import "JZHGooeySlideMenu.h"
+#import "RCTConvert+SlideMenu.h"
 
 @implementation JZHGooeySlideMenuViewManager
+{
+    JZHGooeySlideMenu* menu;
+}
+
+RCT_EXPORT_MODULE()
+RCT_CUSTOM_VIEW_PROPERTY(titles, NSArray<NSString*>*, JZHGooeySlideMenu)
+{
+    [menu setTitles:[RCTConvert menuTitles:json]];
+}
+
+RCT_EXPORT_VIEW_PROPERTY(color, NSString*)
+RCT_EXPORT_VIEW_PROPERTY(buttonSpace, CGFloat)
+RCT_EXPORT_VIEW_PROPERTY(menuBlankWidth, CGFloat)
+RCT_EXPORT_VIEW_PROPERTY(buttonHeight, CGFloat)
+RCT_EXPORT_VIEW_PROPERTY(menuClickBlock, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(style, UIBlurEffectStyle)
+
+RCT_EXPORT_METHOD(trigger) {
+    [menu trigger];
+}
+
+- (UIView *)view {
+    if (!menu) {
+        menu = [[JZHGooeySlideMenu alloc] init];
+    }
+    return menu;
+}
+
+- (NSDictionary *)constantsToExport {
+    return blurStyle();
+}
 
 @end
