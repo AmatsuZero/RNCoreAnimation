@@ -9,6 +9,7 @@
 
 #import <React/RCTBundleURLProvider.h>
 #import <React/RCTRootView.h>
+#import <RNCoreAnimationComponents.h>
 
 @implementation AppDelegate
 

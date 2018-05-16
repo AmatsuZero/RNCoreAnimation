@@ -9,6 +9,8 @@ import Button from './Button';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 
+import CircileView from "./RNCircleView"
+
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
 storiesOf('Button', module)
@@ -23,3 +25,6 @@ storiesOf('Button', module)
       <Text>😀 😎 👍 💯</Text>
     </Button>
   ));
+
+storiesOf('CircleView', module)
+    .add('Display', () => <CircileView/>)

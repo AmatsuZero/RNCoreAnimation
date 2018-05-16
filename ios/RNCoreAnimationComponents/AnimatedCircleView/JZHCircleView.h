@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "JZHCircleLayer.h"
 
 @interface JZHCircleView : UIView
 
-@property(nonatomic,strong)JZHCircleLayer *circleLayer;
+@property(nonatomic, assign)CGFloat progress;
 
 @end

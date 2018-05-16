@@ -40,7 +40,16 @@ RCT_EXPORT_METHOD(trigger) {
 }
 
 - (NSDictionary *)constantsToExport {
-    return blurStyle();
+    NSMutableDictionary* dict = [NSMutableDictionary dictionaryWithDictionary:@{
+                                                                                @"blurEffectStyleExtraLight": @(UIBlurEffectStyleExtraLight),
+                                                                                @"blurEffectStyleLight": @(UIBlurEffectStyleLight),
+                                                                                @"blurEffectStyleDark": @(UIBlurEffectStyleDark),
+                                                                                }];
+    if (@available(iOS 10.0, *)) {
+        dict[@"blurEffectStyleProminent"] = @(UIBlurEffectStyleProminent);
+        dict[@"blurEffectStyleRegular"] = @(UIBlurEffectStyleRegular);
+    }
+    return [dict copy];
 }
 
 @end
