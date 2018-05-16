@@ -5,7 +5,7 @@ import {
     UIManager,
     findNodeHandle
 } from "react-native"
-const GooeySlideMenu = requireNativeComponent("JZHGooeySlideMenu", RNGooeySlideMenu)
+const GooeySlideMenu = requireNativeComponent("JZHGooeySlideMenuView", RNGooeySlideMenu)
 export default class RNGooeySlideMenu extends PureComponent {
      static propTypes = {
          color: PropTypes.string,

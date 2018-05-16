@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "JZHCircleViewManager.h"
 #import "JZHGooeySlideMenuViewManager.h"
+#import "JZHDownloadButtonViewManager.h"
 
 @interface RNCoreAnimationComponents : NSObject
 

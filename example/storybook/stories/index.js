@@ -9,7 +9,8 @@ import Button from './Button';
 import CenterView from './CenterView';
 import Welcome from './Welcome';
 
-import CircileView from "./RNCircleView"
+import CircleView from "./RNCircleView"
+import DownloadButton from "./AnimatedDownloadButton"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -27,4 +28,7 @@ storiesOf('Button', module)
   ));
 
 storiesOf('CircleView', module)
-    .add('Display', () => <CircileView/>)
+    .add('Display', () => <CircleView/>)
+
+storiesOf('Animated Download Button', module)
+    .add('Display', () => <DownloadButton/>)

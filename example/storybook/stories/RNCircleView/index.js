@@ -7,7 +7,6 @@ import {
 import { RNCircleView } from "rn-coreanimation"
 
 export default class CircleView extends Component {
-
     styles ={
         container: {
             flex: 1,
