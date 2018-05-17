@@ -4,6 +4,7 @@ import RNAnimatedDownloadButton from "./src/RNAnimatedDownloadButton"
 import RNBallLoadingHUD from "./src/RNBallLoadingHUD"
 import RNDynamicCoverView from "./src/RNDynamicCoverView"
 import RNFireworkButton from "./src/RNFireworkButton"
+import RNCardView from "./src/RNCardView"
 
 export {
     RNCircleView,
@@ -11,5 +12,6 @@ export {
     RNAnimatedDownloadButton,
     RNBallLoadingHUD,
     RNDynamicCoverView,
-    RNFireworkButton
+    RNFireworkButton,
+    RNCardView
 }

@@ -14,6 +14,7 @@ import CircleView from "./RNCircleView"
 import DownloadButton from "./AnimatedDownloadButton"
 import LoadingHUD from "./LoadingHUD"
 import DynamicCover from "./DynamicCover"
+import CardView from "./tvOSCardView"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -47,3 +48,6 @@ storiesOf('Ball Loading HUD', module)
 
 storiesOf("Dynamic Cover", module)
     .add('Display', () => <DynamicCover/>)
+
+storiesOf("tvOS Card View", module)
+    .add('Native', () => <CardView/>)

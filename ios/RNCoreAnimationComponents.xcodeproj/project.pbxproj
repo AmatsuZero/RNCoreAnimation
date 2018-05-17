@@ -27,6 +27,8 @@
 		21AF0E6F20AD74300035C821 /* JZHFireworkView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E6E20AD74300035C821 /* JZHFireworkView.m */; };
 		21AF0E7220AD789E0035C821 /* JZHFireworkButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E7120AD789E0035C821 /* JZHFireworkButton.m */; };
 		21AF0E7520AD7F730035C821 /* JZHFireworkButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E7420AD7F730035C821 /* JZHFireworkButtonViewManager.m */; };
+		21AF0EA020ADBD710035C821 /* JZHCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E9F20ADBD710035C821 /* JZHCardView.m */; };
+		21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0EA220ADC0A90035C821 /* JZHCardViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +84,10 @@
 		21AF0E7120AD789E0035C821 /* JZHFireworkButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHFireworkButton.m; sourceTree = "<group>"; };
 		21AF0E7320AD7F730035C821 /* JZHFireworkButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHFireworkButtonViewManager.h; sourceTree = "<group>"; };
 		21AF0E7420AD7F730035C821 /* JZHFireworkButtonViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHFireworkButtonViewManager.m; sourceTree = "<group>"; };
+		21AF0E9E20ADBD710035C821 /* JZHCardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHCardView.h; sourceTree = "<group>"; };
+		21AF0E9F20ADBD710035C821 /* JZHCardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHCardView.m; sourceTree = "<group>"; };
+		21AF0EA120ADC0A90035C821 /* JZHCardViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHCardViewManager.h; sourceTree = "<group>"; };
+		21AF0EA220ADC0A90035C821 /* JZHCardViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHCardViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -114,6 +120,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				21AF0E9D20ADBD4C0035C821 /* CardView */,
 				21AF0E6C20AD73A10035C821 /* FireworkButton */,
 				21AF0E5820AD43770035C821 /* DynamicCover */,
 				21AF0E3A20AD321D0035C821 /* LoadingHUD */,
@@ -220,6 +227,17 @@
 			path = FireworkButton;
 			sourceTree = "<group>";
 		};
+		21AF0E9D20ADBD4C0035C821 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				21AF0E9E20ADBD710035C821 /* JZHCardView.h */,
+				21AF0E9F20ADBD710035C821 /* JZHCardView.m */,
+				21AF0EA120ADC0A90035C821 /* JZHCardViewManager.h */,
+				21AF0EA220ADC0A90035C821 /* JZHCardViewManager.m */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -286,8 +304,10 @@
 				2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */,
 				21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */,
 				2129D39C20AACB8B002441FD /* RNCoreAnimationComponents.m in Sources */,
+				21AF0EA020ADBD710035C821 /* JZHCardView.m in Sources */,
 				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,
 				21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */,
+				21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */,
 				21AF0E7220AD789E0035C821 /* JZHFireworkButton.m in Sources */,
 				21AF0E5B20AD43F10035C821 /* JZHDynamicCover.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,

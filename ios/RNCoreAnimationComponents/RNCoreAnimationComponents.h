@@ -13,6 +13,7 @@
 #import "JZHLoadingHUD.h"
 #import "JZHDynamicCoverViewManager.h"
 #import "JZHFireworkButtonViewManager.h"
+#import "JZHCardViewManager.h"
 
 @interface RNCoreAnimationComponents : NSObject
 
