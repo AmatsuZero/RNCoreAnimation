@@ -18,7 +18,7 @@ export default class RNGooeySlideMenu extends PureComponent {
      trigger() {
          UIManager.dispatchViewManagerCommand(
              findNodeHandle(this),
-             UIManager.GooeySlideMenu.Commands.trigger,
+             UIManager.JZHGooeySlideMenuView.Commands.trigger,
              null
          )
      }

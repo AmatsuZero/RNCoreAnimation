@@ -11,6 +11,7 @@
 #import "JZHGooeySlideMenuViewManager.h"
 #import "JZHDownloadButtonViewManager.h"
 #import "JZHLoadingHUD.h"
+#import "JZHDynamicCoverViewManager.h"
 
 @interface RNCoreAnimationComponents : NSObject
 

@@ -22,6 +22,8 @@
 		21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3120AD2A960035C821 /* JZHBubbleTransition.m */; };
 		21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3420AD2C120035C821 /* JZHInteractiveTransition.m */; };
 		21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3C20AD32450035C821 /* JZHLoadingHUD.m */; };
+		21AF0E5B20AD43F10035C821 /* JZHDynamicCover.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E5A20AD43F10035C821 /* JZHDynamicCover.m */; };
+		21AF0E5E20AD56490035C821 /* JZHDynamicCoverViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E5D20AD56490035C821 /* JZHDynamicCoverViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -67,6 +69,10 @@
 		21AF0E3420AD2C120035C821 /* JZHInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHInteractiveTransition.m; sourceTree = "<group>"; };
 		21AF0E3B20AD32450035C821 /* JZHLoadingHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLoadingHUD.h; sourceTree = "<group>"; };
 		21AF0E3C20AD32450035C821 /* JZHLoadingHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLoadingHUD.m; sourceTree = "<group>"; };
+		21AF0E5920AD43F10035C821 /* JZHDynamicCover.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDynamicCover.h; sourceTree = "<group>"; };
+		21AF0E5A20AD43F10035C821 /* JZHDynamicCover.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHDynamicCover.m; sourceTree = "<group>"; };
+		21AF0E5C20AD56490035C821 /* JZHDynamicCoverViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDynamicCoverViewManager.h; sourceTree = "<group>"; };
+		21AF0E5D20AD56490035C821 /* JZHDynamicCoverViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHDynamicCoverViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +105,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				21AF0E5820AD43770035C821 /* DynamicCover */,
 				21AF0E3A20AD321D0035C821 /* LoadingHUD */,
 				21AF0E2F20AD2A6C0035C821 /* BubbleTransition */,
 				21AF0DED20AC329B0035C821 /* AnimatedDownloadButton */,
@@ -179,6 +186,17 @@
 			path = LoadingHUD;
 			sourceTree = "<group>";
 		};
+		21AF0E5820AD43770035C821 /* DynamicCover */ = {
+			isa = PBXGroup;
+			children = (
+				21AF0E5920AD43F10035C821 /* JZHDynamicCover.h */,
+				21AF0E5A20AD43F10035C821 /* JZHDynamicCover.m */,
+				21AF0E5C20AD56490035C821 /* JZHDynamicCoverViewManager.h */,
+				21AF0E5D20AD56490035C821 /* JZHDynamicCoverViewManager.m */,
+			);
+			path = DynamicCover;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -247,7 +265,9 @@
 				2129D39C20AACB8B002441FD /* RNCoreAnimationComponents.m in Sources */,
 				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,
 				21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */,
+				21AF0E5B20AD43F10035C821 /* JZHDynamicCover.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
+				21AF0E5E20AD56490035C821 /* JZHDynamicCoverViewManager.m in Sources */,
 				21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */,
 				21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */,
 			);
