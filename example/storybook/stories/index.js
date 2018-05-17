@@ -11,6 +11,7 @@ import Welcome from './Welcome';
 
 import CircleView from "./RNCircleView"
 import DownloadButton from "./AnimatedDownloadButton"
+import LoadingHUD from "./LoadingHUD"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -27,8 +28,11 @@ storiesOf('Button', module)
     </Button>
   ));
 
-storiesOf('CircleView', module)
+storiesOf('Circle View', module)
     .add('Display', () => <CircleView/>)
 
-storiesOf('Animated Download Button', module)
+storiesOf('Download Button', module)
     .add('Display', () => <DownloadButton/>)
+
+storiesOf('Ball Loading HUD', module)
+    .add('Display', () => <LoadingHUD/>)

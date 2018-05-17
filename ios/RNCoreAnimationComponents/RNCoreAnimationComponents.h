@@ -10,6 +10,7 @@
 #import "JZHCircleViewManager.h"
 #import "JZHGooeySlideMenuViewManager.h"
 #import "JZHDownloadButtonViewManager.h"
+#import "JZHLoadingHUD.h"
 
 @interface RNCoreAnimationComponents : NSObject
 

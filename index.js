@@ -1,9 +1,11 @@
 import RNCircleView from "./src/RNCircleView"
 import RNGooeySlideMenu from './src/RNGooeySlideMenu'
 import RNAnimatedDownloadButton from "./src/RNAnimatedDownloadButton"
+import RNBallLoadingHUD from "./src/RNBallLoadingHUD"
 
 export {
     RNCircleView,
     RNGooeySlideMenu,
-    RNAnimatedDownloadButton
+    RNAnimatedDownloadButton,
+    RNBallLoadingHUD
 }

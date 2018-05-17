@@ -19,6 +19,9 @@
 		2129D51320ABEF0F002441FD /* NSString+JZHColorConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D51220ABEF0F002441FD /* NSString+JZHColorConvertor.m */; };
 		21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */; };
 		21AF0DF320AC36FF0035C821 /* JZHDownloadButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DF220AC36FF0035C821 /* JZHDownloadButtonViewManager.m */; };
+		21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3120AD2A960035C821 /* JZHBubbleTransition.m */; };
+		21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3420AD2C120035C821 /* JZHInteractiveTransition.m */; };
+		21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3C20AD32450035C821 /* JZHLoadingHUD.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -58,6 +61,12 @@
 		21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHAnimatedDownloadButton.m; sourceTree = "<group>"; };
 		21AF0DF120AC36FF0035C821 /* JZHDownloadButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDownloadButtonViewManager.h; sourceTree = "<group>"; };
 		21AF0DF220AC36FF0035C821 /* JZHDownloadButtonViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHDownloadButtonViewManager.m; sourceTree = "<group>"; };
+		21AF0E3020AD2A960035C821 /* JZHBubbleTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHBubbleTransition.h; sourceTree = "<group>"; };
+		21AF0E3120AD2A960035C821 /* JZHBubbleTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHBubbleTransition.m; sourceTree = "<group>"; };
+		21AF0E3320AD2C120035C821 /* JZHInteractiveTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHInteractiveTransition.h; sourceTree = "<group>"; };
+		21AF0E3420AD2C120035C821 /* JZHInteractiveTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHInteractiveTransition.m; sourceTree = "<group>"; };
+		21AF0E3B20AD32450035C821 /* JZHLoadingHUD.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLoadingHUD.h; sourceTree = "<group>"; };
+		21AF0E3C20AD32450035C821 /* JZHLoadingHUD.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLoadingHUD.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +99,8 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				21AF0E3A20AD321D0035C821 /* LoadingHUD */,
+				21AF0E2F20AD2A6C0035C821 /* BubbleTransition */,
 				21AF0DED20AC329B0035C821 /* AnimatedDownloadButton */,
 				2129D51420ABEF13002441FD /* Categories */,
 				2129D45620AADF7E002441FD /* GooeySlideMenu */,
@@ -146,6 +157,26 @@
 				21AF0DF220AC36FF0035C821 /* JZHDownloadButtonViewManager.m */,
 			);
 			path = AnimatedDownloadButton;
+			sourceTree = "<group>";
+		};
+		21AF0E2F20AD2A6C0035C821 /* BubbleTransition */ = {
+			isa = PBXGroup;
+			children = (
+				21AF0E3020AD2A960035C821 /* JZHBubbleTransition.h */,
+				21AF0E3120AD2A960035C821 /* JZHBubbleTransition.m */,
+				21AF0E3320AD2C120035C821 /* JZHInteractiveTransition.h */,
+				21AF0E3420AD2C120035C821 /* JZHInteractiveTransition.m */,
+			);
+			path = BubbleTransition;
+			sourceTree = "<group>";
+		};
+		21AF0E3A20AD321D0035C821 /* LoadingHUD */ = {
+			isa = PBXGroup;
+			children = (
+				21AF0E3B20AD32450035C821 /* JZHLoadingHUD.h */,
+				21AF0E3C20AD32450035C821 /* JZHLoadingHUD.m */,
+			);
+			path = LoadingHUD;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -212,10 +243,13 @@
 				21AF0DF320AC36FF0035C821 /* JZHDownloadButtonViewManager.m in Sources */,
 				2129D3DE20AACD2E002441FD /* JZHCircleLayer.m in Sources */,
 				2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */,
+				21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */,
 				2129D39C20AACB8B002441FD /* RNCoreAnimationComponents.m in Sources */,
 				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,
+				21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
 				21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */,
+				21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -17,7 +17,7 @@
 
 @implementation JZHAnimatedDownloadButton
 
-- (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(__unused NSSet<UITouch *> *)touches withEvent:(__unused UIEvent *)event {
     originframe = self.frame;
     if (animating) return;
     [self.layer.sublayers enumerateObjectsUsingBlock:^(CALayer * _Nonnull subLayer, NSUInteger idx, BOOL * _Nonnull stop) {
@@ -62,7 +62,7 @@
     }
 }
 
-- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag {
+- (void)animationDidStop:(CAAnimation *)anim finished:(__unused BOOL)flag {
     if ([[anim valueForKey:@"animationName"]isEqualToString:@"progressBarAnimation"]){
         [UIView animateWithDuration:0.3 animations:^{
             [self.layer.sublayers enumerateObjectsUsingBlock:^(CALayer * _Nonnull subLayer, NSUInteger idx, BOOL * _Nonnull stop) {
