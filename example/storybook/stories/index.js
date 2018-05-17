@@ -4,6 +4,7 @@ import { Text } from 'react-native';
 import { storiesOf } from '@storybook/react-native';
 import { action } from '@storybook/addon-actions';
 import { linkTo } from '@storybook/addon-links';
+import { RNFireworkButton } from "rn-coreanimation"
 
 import Button from './Button';
 import CenterView from './CenterView';
@@ -27,7 +28,13 @@ storiesOf('Button', module)
     <Button onPress={action('clicked-emoji')}>
       <Text>😀 😎 👍 💯</Text>
     </Button>
-  ));
+  ))
+  .add("Fireworks", () => <RNFireworkButton
+      particleImageName={"Sparkle"}
+      activeImageName={"Like-Blue"}
+      inactiveImageName={"Like"}
+      style={{width: 32, height: 30}}
+  />);
 
 storiesOf('Circle View', module)
     .add('Display', () => <CircleView/>)

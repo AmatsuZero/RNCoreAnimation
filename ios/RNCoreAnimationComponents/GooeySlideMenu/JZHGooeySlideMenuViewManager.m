@@ -28,8 +28,10 @@ RCT_EXPORT_VIEW_PROPERTY(menuClickBlock, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(style, UIBlurEffectStyle)
 
 RCT_EXPORT_METHOD(trigger:(NSNumber *)reactTag) {
-    JZHGooeySlideMenu* menu = [self getViewWithTag:reactTag];
-    [menu trigger];
+    dispatch_async(dispatch_get_main_queue(), ^{
+        JZHGooeySlideMenu* menu = [self getViewWithTag:reactTag];
+        [menu trigger];
+    });
 }
 
 - (UIView *)view {
