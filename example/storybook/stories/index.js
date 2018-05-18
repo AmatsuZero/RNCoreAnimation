@@ -16,6 +16,7 @@ import LoadingHUD from "./LoadingHUD"
 import DynamicCover from "./DynamicCover"
 import CardView from "./tvOSCardView"
 import JumpStar from "./JumpStar"
+import PulseLoader from "./PulseLoader"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -55,3 +56,6 @@ storiesOf("tvOS Card View", module)
 
 storiesOf("Jump Star", module)
     .add('Native', () => <JumpStar/>)
+
+storiesOf("Pulse loader", module)
+    .add("Display", () => <PulseLoader/>)

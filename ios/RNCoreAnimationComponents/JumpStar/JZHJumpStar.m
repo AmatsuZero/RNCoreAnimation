@@ -54,6 +54,7 @@ const NSTimeInterval downDuration = 0.215;
         self.shadowView.image = [UIImage imageNamed:@"shadow_new"];
         [self addSubview:self.shadowView];
     }
+    self.mark = self.mark;
 }
 
 //上弹动画

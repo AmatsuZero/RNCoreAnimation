@@ -30,6 +30,7 @@
     self.layer.shadowOpacity = 0.3f;
 
     cardImageView = [[UIImageView alloc]initWithFrame:self.bounds];
+    cardImageView.image = [UIImage imageNamed:self.cardImageName];
     cardImageView.layer.cornerRadius = 5.0f;
     cardImageView.clipsToBounds = YES;
     [self addSubview:cardImageView];
@@ -38,6 +39,7 @@
     [self addGestureRecognizer:panGes];
 
     cardParallaxView = [[UIImageView alloc]initWithFrame:cardImageView.frame];
+    cardParallaxView.image = [UIImage imageNamed:self.cardParallaxImageName];
     cardParallaxView.layer.transform = CATransform3DTranslate(cardParallaxView.layer.transform, 0, 0, 200);
     [self insertSubview:cardParallaxView aboveSubview:cardImageView];
 }
@@ -72,14 +74,5 @@
     return t;
 }
 
-- (void)setCardImageName:(NSString *)cardImageName {
-    _cardImageName = cardImageName;
-    cardImageView.image = [UIImage imageNamed:cardImageName];
-}
-
-- (void)setCardParallaxImageName:(NSString *)cardParallaxImageName {
-    _cardParallaxImageName = cardParallaxImageName;
-    cardParallaxView.image = [UIImage imageNamed:cardParallaxImageName];
-}
 
 @end

@@ -6,6 +6,7 @@ import RNDynamicCoverView from "./src/RNDynamicCoverView"
 import RNFireworkButton from "./src/RNFireworkButton"
 import RNCardView from "./src/RNCardView"
 import RNJumpStar from "./src/RNJumpStar"
+import RNPulseLoader from "./src/RNPulseLoader"
 
 export {
     RNCircleView,
@@ -15,5 +16,6 @@ export {
     RNDynamicCoverView,
     RNFireworkButton,
     RNCardView,
-    RNJumpStar
+    RNJumpStar,
+    RNPulseLoader
 }

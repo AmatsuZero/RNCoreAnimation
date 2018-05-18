@@ -19,6 +19,8 @@
 		2129D51320ABEF0F002441FD /* NSString+JZHColorConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D51220ABEF0F002441FD /* NSString+JZHColorConvertor.m */; };
 		215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 215597EA20AEC31E00B908C0 /* JZHJumpStar.m */; };
 		215597EE20AEC69A00B908C0 /* JZHJumpStarViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215597ED20AEC69A00B908C0 /* JZHJumpStarViewManager.m */; };
+		2155982820AEE7A300B908C0 /* JZHPulseLoaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2155982720AEE7A300B908C0 /* JZHPulseLoaderView.m */; };
+		2155982B20AEE84600B908C0 /* JZHPulseLoaderViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2155982A20AEE84600B908C0 /* JZHPulseLoaderViewManager.m */; };
 		21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */; };
 		21AF0DF320AC36FF0035C821 /* JZHDownloadButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DF220AC36FF0035C821 /* JZHDownloadButtonViewManager.m */; };
 		21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3120AD2A960035C821 /* JZHBubbleTransition.m */; };
@@ -70,6 +72,10 @@
 		215597EA20AEC31E00B908C0 /* JZHJumpStar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHJumpStar.m; sourceTree = "<group>"; };
 		215597EC20AEC69A00B908C0 /* JZHJumpStarViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHJumpStarViewManager.h; sourceTree = "<group>"; };
 		215597ED20AEC69A00B908C0 /* JZHJumpStarViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHJumpStarViewManager.m; sourceTree = "<group>"; };
+		2155982620AEE7A300B908C0 /* JZHPulseLoaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHPulseLoaderView.h; sourceTree = "<group>"; };
+		2155982720AEE7A300B908C0 /* JZHPulseLoaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHPulseLoaderView.m; sourceTree = "<group>"; };
+		2155982920AEE84600B908C0 /* JZHPulseLoaderViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHPulseLoaderViewManager.h; sourceTree = "<group>"; };
+		2155982A20AEE84600B908C0 /* JZHPulseLoaderViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHPulseLoaderViewManager.m; sourceTree = "<group>"; };
 		21AF0DEE20AC33080035C821 /* JZHAnimatedDownloadButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHAnimatedDownloadButton.h; sourceTree = "<group>"; };
 		21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHAnimatedDownloadButton.m; sourceTree = "<group>"; };
 		21AF0DF120AC36FF0035C821 /* JZHDownloadButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDownloadButtonViewManager.h; sourceTree = "<group>"; };
@@ -126,6 +132,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2155982520AEE75600B908C0 /* PulseLoader */,
 				215597E820AEC2F300B908C0 /* JumpStar */,
 				21AF0E9D20ADBD4C0035C821 /* CardView */,
 				21AF0E6C20AD73A10035C821 /* FireworkButton */,
@@ -188,6 +195,17 @@
 				215597ED20AEC69A00B908C0 /* JZHJumpStarViewManager.m */,
 			);
 			path = JumpStar;
+			sourceTree = "<group>";
+		};
+		2155982520AEE75600B908C0 /* PulseLoader */ = {
+			isa = PBXGroup;
+			children = (
+				2155982620AEE7A300B908C0 /* JZHPulseLoaderView.h */,
+				2155982720AEE7A300B908C0 /* JZHPulseLoaderView.m */,
+				2155982920AEE84600B908C0 /* JZHPulseLoaderViewManager.h */,
+				2155982A20AEE84600B908C0 /* JZHPulseLoaderViewManager.m */,
+			);
+			path = PulseLoader;
 			sourceTree = "<group>";
 		};
 		21AF0DED20AC329B0035C821 /* AnimatedDownloadButton */ = {
@@ -327,6 +345,8 @@
 				21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */,
 				21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */,
 				21AF0E7220AD789E0035C821 /* JZHFireworkButton.m in Sources */,
+				2155982B20AEE84600B908C0 /* JZHPulseLoaderViewManager.m in Sources */,
+				2155982820AEE7A300B908C0 /* JZHPulseLoaderView.m in Sources */,
 				21AF0E5B20AD43F10035C821 /* JZHDynamicCover.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
 				215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */,
