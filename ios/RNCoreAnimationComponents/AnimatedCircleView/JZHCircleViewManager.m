@@ -12,7 +12,7 @@
 
 RCT_EXPORT_MODULE()
 RCT_EXPORT_VIEW_PROPERTY(progress, CGFloat)
-- (UIView *)view {
+- (__kindof UIView *)view {
     return [[JZHCircleView alloc] init];
 }
 

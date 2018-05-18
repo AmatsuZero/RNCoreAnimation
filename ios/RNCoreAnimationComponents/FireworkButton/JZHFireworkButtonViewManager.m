@@ -20,7 +20,7 @@ RCT_EXPORT_VIEW_PROPERTY(inactiveImageName, NSString*)
 RCT_EXPORT_VIEW_PROPERTY(activeCallback, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(disactiveCallback, RCTBubblingEventBlock)
 
-- (UIView *)view {
+- (__kindof UIView *)view {
     JZHFireworkButton* btn = [[JZHFireworkButton alloc] init];
     [btn addTarget:self action:@selector(handlePress:) forControlEvents: UIControlEventTouchUpInside];
     return btn;

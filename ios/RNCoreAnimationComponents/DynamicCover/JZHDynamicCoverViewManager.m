@@ -20,7 +20,7 @@ RCT_EXPORT_METHOD(restore:(NSNumber* _Nonnull)tag) {
     });
 }
 
-- (UIView *)view {
+- (__kindof UIView *)view {
     return [[JZHDynamicCover alloc] init];
 }
 

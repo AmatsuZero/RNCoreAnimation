@@ -15,7 +15,7 @@ RCT_EXPORT_MODULE()
 RCT_EXPORT_VIEW_PROPERTY(progressBarHeight, CGFloat)
 RCT_EXPORT_VIEW_PROPERTY(progressBarWidth, CGFloat)
 
-- (UIView *)view {
+- (__kindof UIView *)view {
     return [[JZHAnimatedDownloadButton alloc] init];
 }
 

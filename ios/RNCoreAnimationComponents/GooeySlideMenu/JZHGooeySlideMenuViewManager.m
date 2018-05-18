@@ -34,7 +34,7 @@ RCT_EXPORT_METHOD(trigger:(NSNumber *)reactTag) {
     });
 }
 
-- (UIView *)view {
+- (__kindof UIView *)view {
     return [[JZHGooeySlideMenu alloc] init];
 }
 

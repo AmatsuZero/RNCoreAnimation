@@ -14,7 +14,7 @@
 RCT_EXPORT_VIEW_PROPERTY(cardImageName, NSString*)
 RCT_EXPORT_VIEW_PROPERTY(cardParallaxImageName, NSString*)
 RCT_EXPORT_MODULE()
--(UIView *)view {
+-(__kindof UIView *)view {
     return [[JZHCardView alloc] init];
 }
 
