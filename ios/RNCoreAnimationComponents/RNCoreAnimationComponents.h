@@ -14,6 +14,7 @@
 #import "JZHDynamicCoverViewManager.h"
 #import "JZHFireworkButtonViewManager.h"
 #import "JZHCardViewManager.h"
+#import "JZHJumpStarViewManager.h"
 
 @interface RNCoreAnimationComponents : NSObject
 

@@ -17,6 +17,8 @@
 		2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D45E20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m */; };
 		2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D47420AB1AD9002441FD /* RCTConvert+SlideMenu.m */; };
 		2129D51320ABEF0F002441FD /* NSString+JZHColorConvertor.m in Sources */ = {isa = PBXBuildFile; fileRef = 2129D51220ABEF0F002441FD /* NSString+JZHColorConvertor.m */; };
+		215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 215597EA20AEC31E00B908C0 /* JZHJumpStar.m */; };
+		215597EE20AEC69A00B908C0 /* JZHJumpStarViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 215597ED20AEC69A00B908C0 /* JZHJumpStarViewManager.m */; };
 		21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */; };
 		21AF0DF320AC36FF0035C821 /* JZHDownloadButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DF220AC36FF0035C821 /* JZHDownloadButtonViewManager.m */; };
 		21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3120AD2A960035C821 /* JZHBubbleTransition.m */; };
@@ -64,6 +66,10 @@
 		2129D47420AB1AD9002441FD /* RCTConvert+SlideMenu.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTConvert+SlideMenu.m"; sourceTree = "<group>"; };
 		2129D51120ABEF0F002441FD /* NSString+JZHColorConvertor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+JZHColorConvertor.h"; sourceTree = "<group>"; };
 		2129D51220ABEF0F002441FD /* NSString+JZHColorConvertor.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+JZHColorConvertor.m"; sourceTree = "<group>"; };
+		215597E920AEC31E00B908C0 /* JZHJumpStar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHJumpStar.h; sourceTree = "<group>"; };
+		215597EA20AEC31E00B908C0 /* JZHJumpStar.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHJumpStar.m; sourceTree = "<group>"; };
+		215597EC20AEC69A00B908C0 /* JZHJumpStarViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHJumpStarViewManager.h; sourceTree = "<group>"; };
+		215597ED20AEC69A00B908C0 /* JZHJumpStarViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHJumpStarViewManager.m; sourceTree = "<group>"; };
 		21AF0DEE20AC33080035C821 /* JZHAnimatedDownloadButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHAnimatedDownloadButton.h; sourceTree = "<group>"; };
 		21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHAnimatedDownloadButton.m; sourceTree = "<group>"; };
 		21AF0DF120AC36FF0035C821 /* JZHDownloadButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDownloadButtonViewManager.h; sourceTree = "<group>"; };
@@ -120,6 +126,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				215597E820AEC2F300B908C0 /* JumpStar */,
 				21AF0E9D20ADBD4C0035C821 /* CardView */,
 				21AF0E6C20AD73A10035C821 /* FireworkButton */,
 				21AF0E5820AD43770035C821 /* DynamicCover */,
@@ -170,6 +177,17 @@
 				2129D47420AB1AD9002441FD /* RCTConvert+SlideMenu.m */,
 			);
 			path = Categories;
+			sourceTree = "<group>";
+		};
+		215597E820AEC2F300B908C0 /* JumpStar */ = {
+			isa = PBXGroup;
+			children = (
+				215597E920AEC31E00B908C0 /* JZHJumpStar.h */,
+				215597EA20AEC31E00B908C0 /* JZHJumpStar.m */,
+				215597EC20AEC69A00B908C0 /* JZHJumpStarViewManager.h */,
+				215597ED20AEC69A00B908C0 /* JZHJumpStarViewManager.m */,
+			);
+			path = JumpStar;
 			sourceTree = "<group>";
 		};
 		21AF0DED20AC329B0035C821 /* AnimatedDownloadButton */ = {
@@ -311,6 +329,8 @@
 				21AF0E7220AD789E0035C821 /* JZHFireworkButton.m in Sources */,
 				21AF0E5B20AD43F10035C821 /* JZHDynamicCover.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
+				215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */,
+				215597EE20AEC69A00B908C0 /* JZHJumpStarViewManager.m in Sources */,
 				21AF0E5E20AD56490035C821 /* JZHDynamicCoverViewManager.m in Sources */,
 				21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */,
 				21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */,

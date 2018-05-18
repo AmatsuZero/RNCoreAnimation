@@ -15,6 +15,7 @@ import DownloadButton from "./AnimatedDownloadButton"
 import LoadingHUD from "./LoadingHUD"
 import DynamicCover from "./DynamicCover"
 import CardView from "./tvOSCardView"
+import JumpStar from "./JumpStar"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -51,3 +52,6 @@ storiesOf("Dynamic Cover", module)
 
 storiesOf("tvOS Card View", module)
     .add('Native', () => <CardView/>)
+
+storiesOf("Jump Star", module)
+    .add('Native', () => <JumpStar/>)
