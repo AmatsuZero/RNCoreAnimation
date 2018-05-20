@@ -8,7 +8,7 @@ export default class extends Component {
         this.starRef = null
     }
     componentDidMount() {
-        this.starRef.start()
+     //   this.starRef.start()
     }
     render() {
         return (

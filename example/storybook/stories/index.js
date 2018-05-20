@@ -17,6 +17,7 @@ import DynamicCover from "./DynamicCover"
 import CardView from "./tvOSCardView"
 import JumpStar from "./JumpStar"
 import PulseLoader from "./PulseLoader"
+import RNAnimatedText from "./AnimatedText"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -59,3 +60,6 @@ storiesOf("Jump Star", module)
 
 storiesOf("Pulse loader", module)
     .add("Display", () => <PulseLoader/>)
+
+storiesOf("Animated Text", module)
+    .add("Poem Show", () => <RNAnimatedText/>)

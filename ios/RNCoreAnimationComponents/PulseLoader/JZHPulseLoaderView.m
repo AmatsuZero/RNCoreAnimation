@@ -22,6 +22,7 @@
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         [self setUp];
+        [self startToPulse];
     });
 }
 

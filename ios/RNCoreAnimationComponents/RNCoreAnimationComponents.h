@@ -16,7 +16,4 @@
 #import "JZHCardViewManager.h"
 #import "JZHJumpStarViewManager.h"
 #import "JZHPulseLoaderViewManager.h"
-
-@interface RNCoreAnimationComponents : NSObject
-
-@end
+#import "JZHAnimatedTextView.h"

@@ -28,7 +28,7 @@
 - (void)layoutSubviews {
     [super layoutSubviews];
     fireworksView.frame = self.bounds;
-    [self insertSubview:fireworksView atIndex:0];
+    [self setImage: self.selected ? activeImg : inactiveImg forState:UIControlStateNormal];
 }
 
 #pragma mark - Methods
