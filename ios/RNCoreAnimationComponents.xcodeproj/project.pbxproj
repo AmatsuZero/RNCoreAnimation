@@ -34,6 +34,8 @@
 		21AF0EA020ADBD710035C821 /* JZHCardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E9F20ADBD710035C821 /* JZHCardView.m */; };
 		21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0EA220ADC0A90035C821 /* JZHCardViewManager.m */; };
 		21B2F98220B139CC002460B6 /* JZHAnimatedTextViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2F98120B139CC002460B6 /* JZHAnimatedTextViewManager.m */; };
+		21B2F9FE20B2734D002460B6 /* JZHDrawingboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2F9FD20B2734D002460B6 /* JZHDrawingboardView.m */; };
+		21B2FA0120B278AF002460B6 /* JZHDrawingboardViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FA0020B278AF002460B6 /* JZHDrawingboardViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -104,6 +106,10 @@
 		21AF0EA220ADC0A90035C821 /* JZHCardViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHCardViewManager.m; sourceTree = "<group>"; };
 		21B2F98020B139CC002460B6 /* JZHAnimatedTextViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHAnimatedTextViewManager.h; sourceTree = "<group>"; };
 		21B2F98120B139CC002460B6 /* JZHAnimatedTextViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHAnimatedTextViewManager.m; sourceTree = "<group>"; };
+		21B2F9FC20B2734D002460B6 /* JZHDrawingboardView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDrawingboardView.h; sourceTree = "<group>"; };
+		21B2F9FD20B2734D002460B6 /* JZHDrawingboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHDrawingboardView.m; sourceTree = "<group>"; };
+		21B2F9FF20B278AF002460B6 /* JZHDrawingboardViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDrawingboardViewManager.h; sourceTree = "<group>"; };
+		21B2FA0020B278AF002460B6 /* JZHDrawingboardViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHDrawingboardViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,6 +142,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				21B2F9FB20B272ED002460B6 /* Drawingboard */,
 				2155984720B126FB00B908C0 /* AnimatedText */,
 				2155982520AEE75600B908C0 /* PulseLoader */,
 				215597E820AEC2F300B908C0 /* JumpStar */,
@@ -289,6 +296,17 @@
 			path = CardView;
 			sourceTree = "<group>";
 		};
+		21B2F9FB20B272ED002460B6 /* Drawingboard */ = {
+			isa = PBXGroup;
+			children = (
+				21B2F9FC20B2734D002460B6 /* JZHDrawingboardView.h */,
+				21B2F9FD20B2734D002460B6 /* JZHDrawingboardView.m */,
+				21B2F9FF20B278AF002460B6 /* JZHDrawingboardViewManager.h */,
+				21B2FA0020B278AF002460B6 /* JZHDrawingboardViewManager.m */,
+			);
+			path = Drawingboard;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -354,6 +372,8 @@
 				2129D3DE20AACD2E002441FD /* JZHCircleLayer.m in Sources */,
 				2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */,
 				21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */,
+				21B2F9FE20B2734D002460B6 /* JZHDrawingboardView.m in Sources */,
+				21B2FA0120B278AF002460B6 /* JZHDrawingboardViewManager.m in Sources */,
 				2155984A20B1275A00B908C0 /* JZHAnimatedTextView.m in Sources */,
 				21AF0EA020ADBD710035C821 /* JZHCardView.m in Sources */,
 				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,

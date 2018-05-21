@@ -93,12 +93,12 @@
     pathLayer.path = textPath.CGPath;
     pathLayer.fillColor = nil;
     pathLayer.lineWidth = 1;
-    pathLayer.strokeColor = [UIColor blackColor].CGColor;
+    pathLayer.strokeColor = [UIColor whiteColor].CGColor;
     //笔迹动画
     CABasicAnimation* textAnimation = [CABasicAnimation animationWithKeyPath:@"strokeEnd"];
     textAnimation.duration = self.duration;
-    textAnimation.fromValue = @0;
-    textAnimation.toValue = @1;
+    textAnimation.fromValue = @(0.f);
+    textAnimation.toValue = @(1.f);
     textAnimation.autoreverses = YES;
     [self->pathLayer addAnimation:textAnimation forKey:@"strokeEnd"];
 }

@@ -7,9 +7,6 @@ export default class extends Component {
         super(props)
         this.starRef = null
     }
-    componentDidMount() {
-     //   this.starRef.start()
-    }
     render() {
         return (
             <View style={{
