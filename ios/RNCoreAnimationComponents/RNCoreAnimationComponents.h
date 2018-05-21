@@ -17,3 +17,4 @@
 #import "JZHJumpStarViewManager.h"
 #import "JZHPulseLoaderViewManager.h"
 #import "JZHAnimatedTextView.h"
+#import "JZHDrawingboardViewManager.h"

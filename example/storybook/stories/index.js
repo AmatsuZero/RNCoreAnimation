@@ -18,6 +18,7 @@ import CardView from "./tvOSCardView"
 import JumpStar from "./JumpStar"
 import PulseLoader from "./PulseLoader"
 import RNAnimatedText from "./AnimatedText"
+import DrawingBoard from "./Drawingboard/index"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -63,3 +64,6 @@ storiesOf("Pulse loader", module)
 
 storiesOf("Animated Text", module)
     .add("Poem Show", () => <RNAnimatedText/>)
+
+storiesOf("Drawing Board", module)
+    .add("Display", () => <DrawingBoard/>)

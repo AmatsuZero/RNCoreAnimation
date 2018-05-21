@@ -26,8 +26,8 @@ static NSUInteger step = 0;
 
 - (instancetype)init {
     if (self = [super init]) {
-        paths = [NSMutableArray arrayWithObject:[UIColor blackColor]];
-        colorArray = [NSMutableArray arrayWithObject:[UIBezierPath bezierPath]];
+        paths = [NSMutableArray arrayWithObject:[UIBezierPath bezierPath]];
+        colorArray = [NSMutableArray arrayWithObject:[UIColor blackColor]];
         drawColor = [UIColor blackColor];
     }
     return self;
