@@ -9,6 +9,7 @@ import RNJumpStar from "./src/RNJumpStar"
 import RNPulseLoader from "./src/RNPulseLoader"
 import RNAnimatedText from "./src/RNAnimatedText"
 import RNDrawingboard from "./src/RNDrawingboard"
+import RNStarOverlay from "./src/RNStarOverlayView"
 
 export {
     RNCircleView,
@@ -21,5 +22,6 @@ export {
     RNJumpStar,
     RNPulseLoader,
     RNAnimatedText,
-    RNDrawingboard
+    RNDrawingboard,
+    RNStarOverlay
 }

@@ -36,6 +36,8 @@
 		21B2F98220B139CC002460B6 /* JZHAnimatedTextViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2F98120B139CC002460B6 /* JZHAnimatedTextViewManager.m */; };
 		21B2F9FE20B2734D002460B6 /* JZHDrawingboardView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2F9FD20B2734D002460B6 /* JZHDrawingboardView.m */; };
 		21B2FA0120B278AF002460B6 /* JZHDrawingboardViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FA0020B278AF002460B6 /* JZHDrawingboardViewManager.m */; };
+		21B2FA5820B3BE04002460B6 /* JZHStarOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FA5720B3BE04002460B6 /* JZHStarOverlayView.m */; };
+		21B2FA7620B3DCDD002460B6 /* JZHStarOverlayViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -110,6 +112,10 @@
 		21B2F9FD20B2734D002460B6 /* JZHDrawingboardView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHDrawingboardView.m; sourceTree = "<group>"; };
 		21B2F9FF20B278AF002460B6 /* JZHDrawingboardViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDrawingboardViewManager.h; sourceTree = "<group>"; };
 		21B2FA0020B278AF002460B6 /* JZHDrawingboardViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHDrawingboardViewManager.m; sourceTree = "<group>"; };
+		21B2FA5620B3BE04002460B6 /* JZHStarOverlayView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHStarOverlayView.h; sourceTree = "<group>"; };
+		21B2FA5720B3BE04002460B6 /* JZHStarOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHStarOverlayView.m; sourceTree = "<group>"; };
+		21B2FA7420B3DCDD002460B6 /* JZHStarOverlayViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHStarOverlayViewManager.h; sourceTree = "<group>"; };
+		21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHStarOverlayViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +148,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				21B2FA5520B3BDD3002460B6 /* StarsOverlay */,
 				21B2F9FB20B272ED002460B6 /* Drawingboard */,
 				2155984720B126FB00B908C0 /* AnimatedText */,
 				2155982520AEE75600B908C0 /* PulseLoader */,
@@ -307,6 +314,17 @@
 			path = Drawingboard;
 			sourceTree = "<group>";
 		};
+		21B2FA5520B3BDD3002460B6 /* StarsOverlay */ = {
+			isa = PBXGroup;
+			children = (
+				21B2FA5620B3BE04002460B6 /* JZHStarOverlayView.h */,
+				21B2FA5720B3BE04002460B6 /* JZHStarOverlayView.m */,
+				21B2FA7420B3DCDD002460B6 /* JZHStarOverlayViewManager.h */,
+				21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */,
+			);
+			path = StarsOverlay;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +386,7 @@
 				2129D51320ABEF0F002441FD /* NSString+JZHColorConvertor.m in Sources */,
 				2129D3E120AAD04C002441FD /* JZHCircleView.m in Sources */,
 				2129D3E420AAD1AE002441FD /* JZHCircleViewManager.m in Sources */,
+				21B2FA7620B3DCDD002460B6 /* JZHStarOverlayViewManager.m in Sources */,
 				21AF0DF320AC36FF0035C821 /* JZHDownloadButtonViewManager.m in Sources */,
 				2129D3DE20AACD2E002441FD /* JZHCircleLayer.m in Sources */,
 				2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */,
@@ -378,6 +397,7 @@
 				21AF0EA020ADBD710035C821 /* JZHCardView.m in Sources */,
 				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,
 				21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */,
+				21B2FA5820B3BE04002460B6 /* JZHStarOverlayView.m in Sources */,
 				21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */,
 				21AF0E7220AD789E0035C821 /* JZHFireworkButton.m in Sources */,
 				2155982B20AEE84600B908C0 /* JZHPulseLoaderViewManager.m in Sources */,

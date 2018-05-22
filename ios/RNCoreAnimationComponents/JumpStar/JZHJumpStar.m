@@ -26,13 +26,13 @@ const NSTimeInterval downDuration = 0.215;
 }
 
 - (void)setTopImage:(NSString *)topImage {
-    _topImage = topImage;
-    _markedImage = [UIImage imageNamed:topImage];
+    _topImage = [topImage copy];
+    _markedImage = [UIImage imageNamed:topImage] ?: [UIImage imageWithContentsOfFile:topImage];
 }
 
 - (void)setBackImage:(NSString *)backImage {
-    _backImage = backImage;
-    _non_markedImage = [UIImage imageNamed:backImage];
+    _backImage = [backImage copy];
+    _non_markedImage = [UIImage imageNamed:backImage] ?: [UIImage imageWithContentsOfFile:backImage];
 }
 
 - (void)setMark:(BOOL)mark {

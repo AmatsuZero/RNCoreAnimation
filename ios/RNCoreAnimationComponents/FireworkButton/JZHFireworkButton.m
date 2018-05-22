@@ -73,7 +73,8 @@
 
 #pragma mark - Properties
 -(void)setParticleImageName:(NSString *)particleImageName {
-    UIImage* img = [UIImage imageNamed:particleImageName];
+    _particleImageName = [particleImageName copy];
+    UIImage* img = [UIImage imageNamed:particleImageName] ?: [UIImage imageWithContentsOfFile:particleImageName];
     fireworksView.particleImage = img;
 }
 
@@ -94,13 +95,13 @@
 }
 
 - (void)setActiveImageName:(NSString *)activeImageName {
-    _activeImageName = activeImageName;
-    activeImg = [UIImage imageNamed:activeImageName];
+    _activeImageName = [activeImageName copy];
+    activeImg = [UIImage imageNamed:activeImageName] ?: [UIImage imageWithContentsOfFile:activeImageName];
 }
 
 - (void)setInactiveImageName:(NSString *)inactiveImageName {
-    _inactiveImageName = inactiveImageName;
-    inactiveImg = [UIImage imageNamed:inactiveImageName];
+    _inactiveImageName = [inactiveImageName copy];
+    inactiveImg = [UIImage imageNamed:inactiveImageName] ?: [UIImage imageWithContentsOfFile:inactiveImageName];
 }
 
 - (void)setSelected:(BOOL)selected {

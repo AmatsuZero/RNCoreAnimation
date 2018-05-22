@@ -6,7 +6,6 @@
 //  Copyright © 2018年 Daubert. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
 #import "JZHCircleViewManager.h"
 #import "JZHGooeySlideMenuViewManager.h"
 #import "JZHDownloadButtonViewManager.h"
@@ -18,3 +17,4 @@
 #import "JZHPulseLoaderViewManager.h"
 #import "JZHAnimatedTextView.h"
 #import "JZHDrawingboardViewManager.h"
+#import "JZHStarOverlayViewManager.h"

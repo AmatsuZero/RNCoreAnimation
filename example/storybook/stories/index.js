@@ -19,6 +19,7 @@ import JumpStar from "./JumpStar"
 import PulseLoader from "./PulseLoader"
 import RNAnimatedText from "./AnimatedText"
 import DrawingBoard from "./Drawingboard/index"
+import Starwars from "./Starwars"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -67,3 +68,6 @@ storiesOf("Animated Text", module)
 
 storiesOf("Drawing Board", module)
     .add("Display", () => <DrawingBoard/>)
+
+storiesOf("Star Wars", module)
+    .add("View", () => <Starwars/>)

@@ -20,7 +20,7 @@
 static NSUInteger step = 0;
 
 - (void)setColor:(NSString *)color {
-    _color = color;
+    _color = [color copy];
     drawColor = [color hexToColor] ?: [UIColor blackColor];
 }
 
