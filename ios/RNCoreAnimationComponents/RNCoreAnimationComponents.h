@@ -18,3 +18,4 @@
 #import "JZHAnimatedTextView.h"
 #import "JZHDrawingboardViewManager.h"
 #import "JZHStarOverlayViewManager.h"
+#import "JZHProfileButtonViewManager.h"

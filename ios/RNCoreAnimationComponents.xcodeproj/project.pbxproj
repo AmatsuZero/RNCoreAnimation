@@ -38,6 +38,9 @@
 		21B2FA0120B278AF002460B6 /* JZHDrawingboardViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FA0020B278AF002460B6 /* JZHDrawingboardViewManager.m */; };
 		21B2FA5820B3BE04002460B6 /* JZHStarOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FA5720B3BE04002460B6 /* JZHStarOverlayView.m */; };
 		21B2FA7620B3DCDD002460B6 /* JZHStarOverlayViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */; };
+		21B2FAD020B42DD3002460B6 /* JZHProfileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FACF20B42DD3002460B6 /* JZHProfileButton.m */; };
+		21B2FAD320B430B0002460B6 /* CircularRevealAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAD220B430B0002460B6 /* CircularRevealAnimator.m */; };
+		21B2FAD620B46724002460B6 /* JZHProfileButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAD520B46724002460B6 /* JZHProfileButtonViewManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -116,6 +119,12 @@
 		21B2FA5720B3BE04002460B6 /* JZHStarOverlayView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHStarOverlayView.m; sourceTree = "<group>"; };
 		21B2FA7420B3DCDD002460B6 /* JZHStarOverlayViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHStarOverlayViewManager.h; sourceTree = "<group>"; };
 		21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHStarOverlayViewManager.m; sourceTree = "<group>"; };
+		21B2FACE20B42DD3002460B6 /* JZHProfileButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHProfileButton.h; sourceTree = "<group>"; };
+		21B2FACF20B42DD3002460B6 /* JZHProfileButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHProfileButton.m; sourceTree = "<group>"; };
+		21B2FAD120B430B0002460B6 /* CircularRevealAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CircularRevealAnimator.h; sourceTree = "<group>"; };
+		21B2FAD220B430B0002460B6 /* CircularRevealAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularRevealAnimator.m; sourceTree = "<group>"; };
+		21B2FAD420B46724002460B6 /* JZHProfileButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHProfileButtonViewManager.h; sourceTree = "<group>"; };
+		21B2FAD520B46724002460B6 /* JZHProfileButtonViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHProfileButtonViewManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -148,7 +157,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
-				21B2FA5520B3BDD3002460B6 /* StarsOverlay */,
+				21B2FA5520B3BDD3002460B6 /* StarsWars */,
 				21B2F9FB20B272ED002460B6 /* Drawingboard */,
 				2155984720B126FB00B908C0 /* AnimatedText */,
 				2155982520AEE75600B908C0 /* PulseLoader */,
@@ -314,15 +323,21 @@
 			path = Drawingboard;
 			sourceTree = "<group>";
 		};
-		21B2FA5520B3BDD3002460B6 /* StarsOverlay */ = {
+		21B2FA5520B3BDD3002460B6 /* StarsWars */ = {
 			isa = PBXGroup;
 			children = (
 				21B2FA5620B3BE04002460B6 /* JZHStarOverlayView.h */,
 				21B2FA5720B3BE04002460B6 /* JZHStarOverlayView.m */,
+				21B2FACE20B42DD3002460B6 /* JZHProfileButton.h */,
+				21B2FACF20B42DD3002460B6 /* JZHProfileButton.m */,
+				21B2FAD420B46724002460B6 /* JZHProfileButtonViewManager.h */,
+				21B2FAD520B46724002460B6 /* JZHProfileButtonViewManager.m */,
+				21B2FAD120B430B0002460B6 /* CircularRevealAnimator.h */,
+				21B2FAD220B430B0002460B6 /* CircularRevealAnimator.m */,
 				21B2FA7420B3DCDD002460B6 /* JZHStarOverlayViewManager.h */,
 				21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */,
 			);
-			path = StarsOverlay;
+			path = StarsWars;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,12 +399,14 @@
 			files = (
 				2129D45920AADFA8002441FD /* JZHGooeySlideMenu.m in Sources */,
 				2129D51320ABEF0F002441FD /* NSString+JZHColorConvertor.m in Sources */,
+				21B2FAD320B430B0002460B6 /* CircularRevealAnimator.m in Sources */,
 				2129D3E120AAD04C002441FD /* JZHCircleView.m in Sources */,
 				2129D3E420AAD1AE002441FD /* JZHCircleViewManager.m in Sources */,
 				21B2FA7620B3DCDD002460B6 /* JZHStarOverlayViewManager.m in Sources */,
 				21AF0DF320AC36FF0035C821 /* JZHDownloadButtonViewManager.m in Sources */,
 				2129D3DE20AACD2E002441FD /* JZHCircleLayer.m in Sources */,
 				2129D47520AB1AD9002441FD /* RCTConvert+SlideMenu.m in Sources */,
+				21B2FAD620B46724002460B6 /* JZHProfileButtonViewManager.m in Sources */,
 				21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */,
 				21B2F9FE20B2734D002460B6 /* JZHDrawingboardView.m in Sources */,
 				21B2FA0120B278AF002460B6 /* JZHDrawingboardViewManager.m in Sources */,
@@ -404,6 +421,7 @@
 				2155982820AEE7A300B908C0 /* JZHPulseLoaderView.m in Sources */,
 				21AF0E5B20AD43F10035C821 /* JZHDynamicCover.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
+				21B2FAD020B42DD3002460B6 /* JZHProfileButton.m in Sources */,
 				215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */,
 				215597EE20AEC69A00B908C0 /* JZHJumpStarViewManager.m in Sources */,
 				21AF0E5E20AD56490035C821 /* JZHDynamicCoverViewManager.m in Sources */,
