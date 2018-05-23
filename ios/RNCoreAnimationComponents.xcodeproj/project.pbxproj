@@ -46,7 +46,6 @@
 		21B2FAF820B5437E002460B6 /* JZHSpriteRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAF720B5437E002460B6 /* JZHSpriteRender.m */; };
 		21B2FAFB20B543CE002460B6 /* JZHViewTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAFA20B543CE002460B6 /* JZHViewTexture.m */; };
 		21B2FAFE20B55D4C002460B6 /* JZHModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAFD20B55D4C002460B6 /* JZHModalTransitionDelegate.m */; };
-		21B2FB0120B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB0020B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m */; };
 		21B2FB0420B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -142,8 +141,6 @@
 		21B2FAFA20B543CE002460B6 /* JZHViewTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHViewTexture.m; sourceTree = "<group>"; };
 		21B2FAFC20B55D4C002460B6 /* JZHModalTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHModalTransitionDelegate.h; sourceTree = "<group>"; };
 		21B2FAFD20B55D4C002460B6 /* JZHModalTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHModalTransitionDelegate.m; sourceTree = "<group>"; };
-		21B2FAFF20B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTModalHostViewManager+TransitionDelegate.h"; sourceTree = "<group>"; };
-		21B2FB0020B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTModalHostViewManager+TransitionDelegate.m"; sourceTree = "<group>"; };
 		21B2FB0220B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTModalHostView+JZHUseCustomDelegate.h"; sourceTree = "<group>"; };
 		21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTModalHostView+JZHUseCustomDelegate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -368,8 +365,6 @@
 			children = (
 				21B2FAEE20B51389002460B6 /* JZHStarWarsGLAnimator.h */,
 				21B2FAEF20B51389002460B6 /* JZHStarWarsGLAnimator.m */,
-				21B2FAFF20B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.h */,
-				21B2FB0020B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m */,
 				21B2FB0220B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.h */,
 				21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */,
 				21B2FAFC20B55D4C002460B6 /* JZHModalTransitionDelegate.h */,
@@ -479,7 +474,6 @@
 				215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */,
 				21B2FAFE20B55D4C002460B6 /* JZHModalTransitionDelegate.m in Sources */,
 				215597EE20AEC69A00B908C0 /* JZHJumpStarViewManager.m in Sources */,
-				21B2FB0120B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m in Sources */,
 				21AF0E5E20AD56490035C821 /* JZHDynamicCoverViewManager.m in Sources */,
 				21B2F98220B139CC002460B6 /* JZHAnimatedTextViewManager.m in Sources */,
 				21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */,

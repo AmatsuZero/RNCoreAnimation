@@ -7,19 +7,16 @@
 //
 #import "RCTModalHostView+JZHUseCustomDelegate.h"
 #import "JZHModalTransitionDelegate.h"
+#import <React/RCTUtils.h>
 
 @implementation RCTModalHostView (JZHUseCustomDelegate)
 
-- (void)setUseCustomDelegate:(BOOL)useCustomDelegate {
-    if (useCustomDelegate) {
-        JZHModalTransitionDelegate* delegate = [JZHModalTransitionDelegate addModalDelegaetForTag:self.identifier];
-        UIViewController* controller = [self valueForKeyPath:@"modalViewController"];
-        controller.transitioningDelegate = delegate;
-    }
++(void)load {
+    RCTSwapInstanceMethods(self, @selector(setAnimationType:), @selector(jzh_setAnimationType:));
 }
 
-- (BOOL)useCustomDelegate {
-    return [JZHModalTransitionDelegate modalDelegateForTag:self.identifier] != nil;
+- (void)jzh_setAnimationType:(NSString*)style {
+    [self jzh_setAnimationType:style];
 }
 
 @end

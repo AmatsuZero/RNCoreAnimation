@@ -10,6 +10,4 @@
 
 @interface RCTModalHostView (JZHUseCustomDelegate)
 
-@property(nonatomic, assign)BOOL useCustomDelegate;
-
 @end

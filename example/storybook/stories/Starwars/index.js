@@ -51,10 +51,9 @@ export default class Starwars extends PureComponent {
     render() {
         return <RNStarOverlay style={this.styles.container} emitImage={"spark"}>
             <Modal
-                animationType={"slide"}
+                animationType={"custom"}
                 transparent={false}
                 visible={this.state.modalVisible}
-                useCustomDelegate={true}
             >
                 <View style={{marginTop: 22}}>
                     <View>
