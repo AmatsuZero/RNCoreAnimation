@@ -41,6 +41,13 @@
 		21B2FAD020B42DD3002460B6 /* JZHProfileButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FACF20B42DD3002460B6 /* JZHProfileButton.m */; };
 		21B2FAD320B430B0002460B6 /* CircularRevealAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAD220B430B0002460B6 /* CircularRevealAnimator.m */; };
 		21B2FAD620B46724002460B6 /* JZHProfileButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAD520B46724002460B6 /* JZHProfileButtonViewManager.m */; };
+		21B2FAF020B51389002460B6 /* JZHStarWarsGLAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAEF20B51389002460B6 /* JZHStarWarsGLAnimator.m */; };
+		21B2FAF520B51589002460B6 /* JZHSprite.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAF420B51589002460B6 /* JZHSprite.m */; };
+		21B2FAF820B5437E002460B6 /* JZHSpriteRender.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAF720B5437E002460B6 /* JZHSpriteRender.m */; };
+		21B2FAFB20B543CE002460B6 /* JZHViewTexture.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAFA20B543CE002460B6 /* JZHViewTexture.m */; };
+		21B2FAFE20B55D4C002460B6 /* JZHModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAFD20B55D4C002460B6 /* JZHModalTransitionDelegate.m */; };
+		21B2FB0120B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB0020B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m */; };
+		21B2FB0420B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -125,6 +132,20 @@
 		21B2FAD220B430B0002460B6 /* CircularRevealAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CircularRevealAnimator.m; sourceTree = "<group>"; };
 		21B2FAD420B46724002460B6 /* JZHProfileButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHProfileButtonViewManager.h; sourceTree = "<group>"; };
 		21B2FAD520B46724002460B6 /* JZHProfileButtonViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHProfileButtonViewManager.m; sourceTree = "<group>"; };
+		21B2FAEE20B51389002460B6 /* JZHStarWarsGLAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHStarWarsGLAnimator.h; sourceTree = "<group>"; };
+		21B2FAEF20B51389002460B6 /* JZHStarWarsGLAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHStarWarsGLAnimator.m; sourceTree = "<group>"; };
+		21B2FAF320B51589002460B6 /* JZHSprite.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHSprite.h; sourceTree = "<group>"; };
+		21B2FAF420B51589002460B6 /* JZHSprite.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHSprite.m; sourceTree = "<group>"; };
+		21B2FAF620B5437E002460B6 /* JZHSpriteRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHSpriteRender.h; sourceTree = "<group>"; };
+		21B2FAF720B5437E002460B6 /* JZHSpriteRender.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHSpriteRender.m; sourceTree = "<group>"; };
+		21B2FAF920B543CE002460B6 /* JZHViewTexture.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHViewTexture.h; sourceTree = "<group>"; };
+		21B2FAFA20B543CE002460B6 /* JZHViewTexture.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHViewTexture.m; sourceTree = "<group>"; };
+		21B2FAFC20B55D4C002460B6 /* JZHModalTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHModalTransitionDelegate.h; sourceTree = "<group>"; };
+		21B2FAFD20B55D4C002460B6 /* JZHModalTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHModalTransitionDelegate.m; sourceTree = "<group>"; };
+		21B2FAFF20B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTModalHostViewManager+TransitionDelegate.h"; sourceTree = "<group>"; };
+		21B2FB0020B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTModalHostViewManager+TransitionDelegate.m"; sourceTree = "<group>"; };
+		21B2FB0220B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTModalHostView+JZHUseCustomDelegate.h"; sourceTree = "<group>"; };
+		21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTModalHostView+JZHUseCustomDelegate.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,6 +178,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				21B2FAE420B509ED002460B6 /* CustomModal */,
 				21B2FA5520B3BDD3002460B6 /* StarsWars */,
 				21B2F9FB20B272ED002460B6 /* Drawingboard */,
 				2155984720B126FB00B908C0 /* AnimatedText */,
@@ -326,6 +348,7 @@
 		21B2FA5520B3BDD3002460B6 /* StarsWars */ = {
 			isa = PBXGroup;
 			children = (
+				21B2FAF220B5154F002460B6 /* StarWarsGLAnimator */,
 				21B2FA5620B3BE04002460B6 /* JZHStarOverlayView.h */,
 				21B2FA5720B3BE04002460B6 /* JZHStarOverlayView.m */,
 				21B2FACE20B42DD3002460B6 /* JZHProfileButton.h */,
@@ -338,6 +361,34 @@
 				21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */,
 			);
 			path = StarsWars;
+			sourceTree = "<group>";
+		};
+		21B2FAE420B509ED002460B6 /* CustomModal */ = {
+			isa = PBXGroup;
+			children = (
+				21B2FAEE20B51389002460B6 /* JZHStarWarsGLAnimator.h */,
+				21B2FAEF20B51389002460B6 /* JZHStarWarsGLAnimator.m */,
+				21B2FAFF20B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.h */,
+				21B2FB0020B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m */,
+				21B2FB0220B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.h */,
+				21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */,
+				21B2FAFC20B55D4C002460B6 /* JZHModalTransitionDelegate.h */,
+				21B2FAFD20B55D4C002460B6 /* JZHModalTransitionDelegate.m */,
+			);
+			path = CustomModal;
+			sourceTree = "<group>";
+		};
+		21B2FAF220B5154F002460B6 /* StarWarsGLAnimator */ = {
+			isa = PBXGroup;
+			children = (
+				21B2FAF320B51589002460B6 /* JZHSprite.h */,
+				21B2FAF420B51589002460B6 /* JZHSprite.m */,
+				21B2FAF620B5437E002460B6 /* JZHSpriteRender.h */,
+				21B2FAF720B5437E002460B6 /* JZHSpriteRender.m */,
+				21B2FAF920B543CE002460B6 /* JZHViewTexture.h */,
+				21B2FAFA20B543CE002460B6 /* JZHViewTexture.m */,
+			);
+			path = StarWarsGLAnimator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -400,6 +451,7 @@
 				2129D45920AADFA8002441FD /* JZHGooeySlideMenu.m in Sources */,
 				2129D51320ABEF0F002441FD /* NSString+JZHColorConvertor.m in Sources */,
 				21B2FAD320B430B0002460B6 /* CircularRevealAnimator.m in Sources */,
+				21B2FB0420B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m in Sources */,
 				2129D3E120AAD04C002441FD /* JZHCircleView.m in Sources */,
 				2129D3E420AAD1AE002441FD /* JZHCircleViewManager.m in Sources */,
 				21B2FA7620B3DCDD002460B6 /* JZHStarOverlayViewManager.m in Sources */,
@@ -414,6 +466,8 @@
 				21AF0EA020ADBD710035C821 /* JZHCardView.m in Sources */,
 				2129D45C20AAE659002441FD /* JZHSlideMenuButton.m in Sources */,
 				21AF0E3520AD2C120035C821 /* JZHInteractiveTransition.m in Sources */,
+				21B2FAFB20B543CE002460B6 /* JZHViewTexture.m in Sources */,
+				21B2FAF520B51589002460B6 /* JZHSprite.m in Sources */,
 				21B2FA5820B3BE04002460B6 /* JZHStarOverlayView.m in Sources */,
 				21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */,
 				21AF0E7220AD789E0035C821 /* JZHFireworkButton.m in Sources */,
@@ -423,11 +477,15 @@
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
 				21B2FAD020B42DD3002460B6 /* JZHProfileButton.m in Sources */,
 				215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */,
+				21B2FAFE20B55D4C002460B6 /* JZHModalTransitionDelegate.m in Sources */,
 				215597EE20AEC69A00B908C0 /* JZHJumpStarViewManager.m in Sources */,
+				21B2FB0120B5606D002460B6 /* RCTModalHostViewManager+TransitionDelegate.m in Sources */,
 				21AF0E5E20AD56490035C821 /* JZHDynamicCoverViewManager.m in Sources */,
 				21B2F98220B139CC002460B6 /* JZHAnimatedTextViewManager.m in Sources */,
 				21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */,
 				21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */,
+				21B2FAF020B51389002460B6 /* JZHStarWarsGLAnimator.m in Sources */,
+				21B2FAF820B5437E002460B6 /* JZHSpriteRender.m in Sources */,
 				21AF0E7520AD7F730035C821 /* JZHFireworkButtonViewManager.m in Sources */,
 				21AF0E6F20AD74300035C821 /* JZHFireworkView.m in Sources */,
 			);

@@ -19,3 +19,5 @@
 #import "JZHDrawingboardViewManager.h"
 #import "JZHStarOverlayViewManager.h"
 #import "JZHProfileButtonViewManager.h"
+#import "RCTModalHostViewManager+TransitionDelegate.h"
+#import "RCTModalHostView+JZHUseCustomDelegate.h"

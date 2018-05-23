@@ -44,7 +44,7 @@ const CGFloat ButtonPadding = 50;
     CALayer *fillLayer = [CALayer layer];
     fillLayer.backgroundColor = self.layer.borderColor;
     fillLayer.frame = self.layer.bounds;
-    [fillLayer insertSublayer:fillLayer atIndex:0];
+    [self.layer insertSublayer:fillLayer atIndex:0];
 
     CGPoint center = CGPointMake(CGRectGetMidX(fillLayer.bounds), CGRectGetMidY(fillLayer.bounds));
     CGFloat radius = MAX(self.frame.size.width/2, self.frame.size.height/2);
