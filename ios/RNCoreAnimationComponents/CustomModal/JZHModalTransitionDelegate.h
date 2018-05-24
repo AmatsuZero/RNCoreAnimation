@@ -10,8 +10,8 @@
 
 @interface JZHModalTransitionDelegate : NSObject<UIViewControllerTransitioningDelegate>
 
-+(_Nullable instancetype)modalDelegateForTag:(NSNumber* _Nonnull)tag;
++(_Nullable instancetype)modalDelegateForTag:(__kindof UIView* _Nonnull)tag;
 
-+(_Nonnull instancetype)addModalDelegaetForTag:(NSNumber* _Nonnull)tag;
++(_Nonnull instancetype)addModalDelegaetForTag:(__kindof UIView* _Nonnull)tag;
 
 @end

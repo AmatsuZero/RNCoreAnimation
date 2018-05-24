@@ -8,26 +8,27 @@
 
 #import "JZHModalTransitionDelegate.h"
 #import "JZHStarWarsGLAnimator.h"
+#import "JZHUIDynamicAnimator.h"
 
-static NSMapTable<NSNumber*, JZHModalTransitionDelegate*>* table;
+static NSMapTable<UIView*, JZHModalTransitionDelegate*>* table;
 
 @implementation JZHModalTransitionDelegate
 
 + (void)load {
-    table = [NSMapTable mapTableWithKeyOptions:NSPointerFunctionsStrongMemory valueOptions:NSPointerFunctionsStrongMemory];
+    table = [NSMapTable weakToStrongObjectsMapTable];
 }
 
 - (id<UIViewControllerAnimatedTransitioning>)animationControllerForDismissedController:(UIViewController *)dismissed {
-    return [[JZHStarWarsGLAnimator alloc] init];
+    return [[JZHUIDynamicAnimator alloc] init];
 }
 
-+ (instancetype)modalDelegateForTag:(NSNumber *)tag {
-    return [table objectForKey:tag];
++ (instancetype)modalDelegateForTag:(__kindof UIView *)view {
+    return [table objectForKey:view];
 }
 
-+ (instancetype)addModalDelegaetForTag:(NSNumber *)tag {
++ (instancetype)addModalDelegaetForTag:(__kindof UIView *)view {
     JZHModalTransitionDelegate* delegate = [JZHModalTransitionDelegate new];
-    [table setObject:delegate forKey:tag];
+    [table setObject:delegate forKey:view];
     return delegate;
 }
 

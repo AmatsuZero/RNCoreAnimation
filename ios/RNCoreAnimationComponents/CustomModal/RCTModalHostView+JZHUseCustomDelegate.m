@@ -17,6 +17,14 @@
 
 - (void)jzh_setAnimationType:(NSString*)style {
     [self jzh_setAnimationType:style];
+    if ([style isEqualToString:@"custom"]) {
+        UIViewController* modalViewController = [self valueForKeyPath:@"modalViewController"];
+        JZHModalTransitionDelegate* delegate = [JZHModalTransitionDelegate modalDelegateForTag:self];
+        if (!delegate) {
+            delegate = [JZHModalTransitionDelegate addModalDelegaetForTag:self];
+        }
+        modalViewController.transitioningDelegate = delegate;
+    }
 }
 
 @end
