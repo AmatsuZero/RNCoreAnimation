@@ -12,7 +12,7 @@
 @implementation JZHProfileButtonViewManager
 
 RCT_EXPORT_MODULE()
-RCT_EXPORT_VIEW_PROPERTY(clickEvent, RCTBubblingEventBlock)
+RCT_EXPORT_VIEW_PROPERTY(onClick, RCTBubblingEventBlock)
 RCT_EXPORT_VIEW_PROPERTY(title, NSString*)
 
 - (UIView *)view {

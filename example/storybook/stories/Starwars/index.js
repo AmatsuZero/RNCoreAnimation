@@ -71,7 +71,7 @@ export default class Starwars extends PureComponent {
                 <Text style={[this.styles.text, {marginTop: 8}]}>MY YOUNG PADAWAN!</Text>
             </View>
             <RNProfileButton style={this.styles.button}
-                             clickEvent={() => this.setModalVisible(!this.state.modalVisible)}>
+                             onClick={() => this.setModalVisible(!this.state.modalVisible)}>
                 <Text style={[this.styles.text, {fontSize: 16}]}>Setup your profile</Text>
             </RNProfileButton>
         </RNStarOverlay>

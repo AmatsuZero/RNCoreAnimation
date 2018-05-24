@@ -66,8 +66,8 @@ const CGFloat ButtonPadding = 50;
         delegate.completion = ^{
             [fillLayer removeFromSuperlayer];
             [weakSelf setUserInteractionEnabled:YES];
-            if ([weakSelf clickEvent]) {
-                weakSelf.clickEvent(nil);
+            if ([weakSelf onClick]) {
+                weakSelf.onClick(nil);
             }
         };
         opacityAnimation.delegate = delegate;

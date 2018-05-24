@@ -10,8 +10,8 @@
 #import <React/RCTComponent.h>
 
 @interface JZHProfileButton : UIButton
-
-@property(nonatomic, copy, nullable)RCTBubblingEventBlock clickEvent;
+// RCTBubblingEventBlock命名需要以onXX开头
+@property(nonatomic, copy, nullable)RCTBubblingEventBlock onClick;
 @property(nonatomic, copy, nonnull)NSString* title;
 
 - (void)animation;
