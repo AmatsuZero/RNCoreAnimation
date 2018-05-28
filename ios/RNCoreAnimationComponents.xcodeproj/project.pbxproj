@@ -21,6 +21,7 @@
 		2155982820AEE7A300B908C0 /* JZHPulseLoaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2155982720AEE7A300B908C0 /* JZHPulseLoaderView.m */; };
 		2155982B20AEE84600B908C0 /* JZHPulseLoaderViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 2155982A20AEE84600B908C0 /* JZHPulseLoaderViewManager.m */; };
 		2155984A20B1275A00B908C0 /* JZHAnimatedTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2155984920B1275A00B908C0 /* JZHAnimatedTextView.m */; };
+		2176919820BBAFAD00516533 /* JZHUViewAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 2176919720BBAFAD00516533 /* JZHUViewAnimator.m */; };
 		21AF0DF020AC33080035C821 /* JZHAnimatedDownloadButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */; };
 		21AF0DF320AC36FF0035C821 /* JZHDownloadButtonViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0DF220AC36FF0035C821 /* JZHDownloadButtonViewManager.m */; };
 		21AF0E3220AD2A960035C821 /* JZHBubbleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 21AF0E3120AD2A960035C821 /* JZHBubbleTransition.m */; };
@@ -92,6 +93,8 @@
 		2155982A20AEE84600B908C0 /* JZHPulseLoaderViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHPulseLoaderViewManager.m; sourceTree = "<group>"; };
 		2155984820B1275A00B908C0 /* JZHAnimatedTextView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHAnimatedTextView.h; sourceTree = "<group>"; };
 		2155984920B1275A00B908C0 /* JZHAnimatedTextView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHAnimatedTextView.m; sourceTree = "<group>"; };
+		2176919620BBAFAD00516533 /* JZHUViewAnimator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHUViewAnimator.h; sourceTree = "<group>"; };
+		2176919720BBAFAD00516533 /* JZHUViewAnimator.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHUViewAnimator.m; sourceTree = "<group>"; };
 		21AF0DEE20AC33080035C821 /* JZHAnimatedDownloadButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHAnimatedDownloadButton.h; sourceTree = "<group>"; };
 		21AF0DEF20AC33080035C821 /* JZHAnimatedDownloadButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHAnimatedDownloadButton.m; sourceTree = "<group>"; };
 		21AF0DF120AC36FF0035C821 /* JZHDownloadButtonViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHDownloadButtonViewManager.h; sourceTree = "<group>"; };
@@ -359,6 +362,10 @@
 				21B2FAD220B430B0002460B6 /* CircularRevealAnimator.m */,
 				21B2FA7420B3DCDD002460B6 /* JZHStarOverlayViewManager.h */,
 				21B2FA7520B3DCDD002460B6 /* JZHStarOverlayViewManager.m */,
+				21B2FB4F20B6A474002460B6 /* JZHUIDynamicAnimator.h */,
+				21B2FB5020B6A475002460B6 /* JZHUIDynamicAnimator.m */,
+				2176919620BBAFAD00516533 /* JZHUViewAnimator.h */,
+				2176919720BBAFAD00516533 /* JZHUViewAnimator.m */,
 			);
 			path = StarsWars;
 			sourceTree = "<group>";
@@ -385,8 +392,6 @@
 				21B2FAFA20B543CE002460B6 /* JZHViewTexture.m */,
 				21B2FAEE20B51389002460B6 /* JZHStarWarsGLAnimator.h */,
 				21B2FAEF20B51389002460B6 /* JZHStarWarsGLAnimator.m */,
-				21B2FB4F20B6A474002460B6 /* JZHUIDynamicAnimator.h */,
-				21B2FB5020B6A475002460B6 /* JZHUIDynamicAnimator.m */,
 			);
 			path = StarWarsGLAnimator;
 			sourceTree = "<group>";
@@ -471,6 +476,7 @@
 				21B2FAF520B51589002460B6 /* JZHSprite.m in Sources */,
 				21B2FA5820B3BE04002460B6 /* JZHStarOverlayView.m in Sources */,
 				21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */,
+				2176919820BBAFAD00516533 /* JZHUViewAnimator.m in Sources */,
 				21AF0E7220AD789E0035C821 /* JZHFireworkButton.m in Sources */,
 				2155982B20AEE84600B908C0 /* JZHPulseLoaderViewManager.m in Sources */,
 				2155982820AEE7A300B908C0 /* JZHPulseLoaderView.m in Sources */,
