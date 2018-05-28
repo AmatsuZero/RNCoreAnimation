@@ -12,7 +12,7 @@ const colors = [
     "#01a1ff",
     "#e65dc3"]
 export default class DrawingBoard extends Component {
-    styles ={
+    styles = {
         container: {
             flex: 1,
             justifyContent:'center',

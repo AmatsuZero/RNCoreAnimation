@@ -20,6 +20,7 @@ import PulseLoader from "./PulseLoader"
 import RNAnimatedText from "./AnimatedText"
 import DrawingBoard from "./Drawingboard/index"
 import Starwars from "./Starwars"
+import FavoriteButton from "./FavoriteButton"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -71,3 +72,6 @@ storiesOf("Drawing Board", module)
 
 storiesOf("Star Wars", module)
     .add("View", () => <Starwars/>)
+
+storiesOf("Favorite Button", module)
+    .add("Favorite Button", () => <FavoriteButton/>)
