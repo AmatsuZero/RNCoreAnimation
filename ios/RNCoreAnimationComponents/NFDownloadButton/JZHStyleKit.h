@@ -21,6 +21,11 @@
                 palette:(JZHPalette*)palette
      rippleManipulable:(CGFloat)rippleManipulable;
 
++(void)drawReadyToDownloadState:(CGRect)targetFrame
+                       resizing:(JZHResizingBehavior*)resizing
+                        palette:(JZHPalette*)palette
+     readyToDownloadManipulable:(CGFloat)readyToDownloadManipulable;
+
 + (void)drawDownloadCompleteState:(CGRect)frame
                          resizing:(JZHResizingBehavior*)resizing
                           palette:(JZHPalette*)palette
@@ -31,5 +36,7 @@
                palette: (JZHPalette*)palette
  downloadedManipulable:(CGFloat)downloadedManipulable
 checkRevealManipulable:(CGFloat) checkRevealManipulable;
+
++ (void)drawDashMoveState:(CGRect)targetFrame resizing:(JZHResizingBehavior*)resizing palette:(JZHPalette*)palette dashMoveManipulable:(CGFloat)dashMoveManipulable;
 
 @end

@@ -275,6 +275,48 @@
  downloadedManipulable:(CGFloat)downloadedManipulable
 checkRevealManipulable:(CGFloat)checkRevealManipulable {
 
+    // General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    // Resize to Target Frame
+    CGContextSaveGState(context);
+    CGRect resizeFrame = [resizing apply:CGRectMake(0, 0, 50, 50) to:targetFrame];
+    CGContextTranslateCTM(context, CGRectGetMinX(resizeFrame), CGRectGetMinY(resizeFrame));
+    CGContextScaleCTM(context, CGRectGetWidth(resizeFrame)/50, CGRectGetHeight(resizeFrame)/50);
+
+    CGFloat checkRevealWidth = checkRevealManipulable * 17;
+    #if TARGET_OS_IPHONE
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+
+    CGRect symboliPhoneRect = CGRectMake(-11, -16, 22, 32);
+    CGContextSaveGState(context);
+    CGContextClipToRect(context, symboliPhoneRect);
+    CGContextTranslateCTM(context, CGRectGetMinX(symboliPhoneRect), CGRectGetMinY(symboliPhoneRect));
+
+    [self drawiPhoneCanvas:CGRectMake(0, 0, CGRectGetWidth(symboliPhoneRect), CGRectGetHeight(symboliPhoneRect))
+                  resizing:[JZHResizingBehavior stretch]
+                   palette:palette];
+    CGContextRestoreGState(context);
+    CGContextRestoreGState(context);
+    #elif TARGET_OS_TV
+    //// SymbolTV Drawing
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+
+    CGRect symbolTVRect = CGRectMake(-20, -14.5, 40, 29);
+    CGContextSaveGState(context);
+    CGContextClipToRect(context, symbolTVRect);
+    CGContextTranslateCTM(context, CGRectGetMinX(symbolTVRect), CGRectGetMinY(symbolTVRect));
+
+    [self drawAppleTVCanvas:CGRectMake(0, 0, CGRectGetWidth(symbolTVRect), CGRectGetHeight(symbolTVRect))
+                   resizing:[JZHResizingBehavior stretch]
+                    palette:palette];
+
+    CGContextRestoreGState(context);
+    CGContextRestoreGState(context);
+    #endif
+
     /// Group
     CGContextSaveGState(context);
     CGContextTranslateCTM(context, 25, 25);
@@ -298,6 +340,17 @@ checkRevealManipulable:(CGFloat)checkRevealManipulable {
     CGContextSaveGState(context);
     CGContextSetBlendMode(context, kCGBlendModeSourceIn);
     CGContextBeginTransparencyLayer(context, NULL);
+
+    UIBezierPath* rectangle4Path = [UIBezierPath bezierPathWithRect:CGRectMake(-9, -7, checkRevealWidth+1, 16)];
+    [palette.deviceColor setFill];
+    [rectangle4Path fill];
+
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+
+    CGContextEndTransparencyLayer(context);
+    CGContextRestoreGState(context);
+    CGContextRestoreGState(context);
 }
 
 + (void)drawiPhoneCanvas:(CGRect)targetFrame resizing:(JZHResizingBehavior*)resizing palette:(JZHPalette*)palette {
@@ -382,6 +435,72 @@ checkRevealManipulable:(CGFloat)checkRevealManipulable {
     [palette.buttonBackgroundColor setFill];
     [rectangle19Path fill];
 
+    CGContextRestoreGState(context);
+}
+
++ (void)drawReadyToDownloadState:(CGRect)targetFrame
+                        resizing:(JZHResizingBehavior *)resizing
+                         palette:(JZHPalette *)palette
+      readyToDownloadManipulable:(CGFloat)readyToDownloadManipulable {
+    // General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+
+    // Resize to Target Frame
+    CGContextSaveGState(context);
+    CGRect resizeFrame = [resizing apply:CGRectMake(0, 0, 50, 50) to:targetFrame];
+    CGContextTranslateCTM(context, CGRectGetMinX(resizeFrame), CGRectGetMinY(resizeFrame));
+    CGContextScaleCTM(context, CGRectGetWidth(resizeFrame)/50, CGRectGetHeight(resizeFrame)/50);
+
+    // Variable Declarations
+    CGFloat readyToDownloadAngle = readyToDownloadManipulable == 1 ? - 360 : 360 - readyToDownloadManipulable * 360;
+
+    // Dashed Circle Drawing
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+
+    UIBezierPath* dashedCirclePath = [UIBezierPath bezierPath];
+    [dashedCirclePath moveToPoint:CGPointMake(15, 0)];
+    [dashedCirclePath addCurveToPoint:CGPointMake(0, 15) controlPoint1:CGPointMake(15, 8.28) controlPoint2:CGPointMake(8.28, 15)];
+    [dashedCirclePath addCurveToPoint:CGPointMake(-15, 0) controlPoint1:CGPointMake(-8.28, 15) controlPoint2:CGPointMake(-15, 8.28)];
+    [dashedCirclePath addCurveToPoint:CGPointMake(0, -15) controlPoint1:CGPointMake(-15, -8.28) controlPoint2:CGPointMake(-8.28, -15)];
+    [dashedCirclePath addCurveToPoint:CGPointMake(15, 0) controlPoint1:CGPointMake(8.28, -15) controlPoint2:CGPointMake(15, -8.28)];
+    [dashedCirclePath closePath];
+
+    [palette.buttonBackgroundColor setFill];
+    [dashedCirclePath fill];
+    [palette.downloadColor setStroke];
+    dashedCirclePath.lineWidth = 1;
+    [dashedCirclePath stroke];
+
+    CGContextRestoreGState(context);
+
+    // Download Tack Drawing
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+    CGContextRotateCTM(context, -90 * M_PI / 180);
+
+    CGRect downloadTackRect = CGRectMake(-14, -14, 28, 28);
+    UIBezierPath* downloadTackPath = [UIBezierPath bezierPath];
+    [downloadTackPath addArcWithCenter:CGPointMake(CGRectGetMinX(downloadTackRect), CGRectGetMidY(downloadTackRect))
+                                radius:CGRectGetWidth(downloadTackRect)/2
+                            startAngle:0
+                              endAngle:-readyToDownloadAngle*M_PI/180
+                             clockwise: YES];
+    [palette.downloadColor setStroke];
+    downloadTackPath.lineWidth = 2.5;
+    [downloadTackPath stroke];
+
+    CGContextRestoreGState(context);
+
+    // Square Drawing
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+
+    UIBezierPath* squarePath = [UIBezierPath bezierPathWithRect:CGRectMake(-3.75, -3.75, 7.5, 7.5)];
+    [palette.downloadColor setFill];
+    [squarePath fill];
+
+    CGContextRestoreGState(context);
     CGContextRestoreGState(context);
 }
 
