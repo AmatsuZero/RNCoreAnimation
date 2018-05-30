@@ -19,4 +19,5 @@
 #import "JZHStarOverlayViewManager.h"
 #import "JZHProfileButtonViewManager.h"
 #import "JZHFavoriteButtonViewManager.h"
+#import "JZHNFDownloadButtonManager.h"
 #import "RCTModalHostView+JZHUseCustomDelegate.h"

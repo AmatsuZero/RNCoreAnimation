@@ -56,6 +56,7 @@
 		21B2FAFE20B55D4C002460B6 /* JZHModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAFD20B55D4C002460B6 /* JZHModalTransitionDelegate.m */; };
 		21B2FB0420B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */; };
 		21B2FB5120B6A475002460B6 /* JZHUIDynamicAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB5020B6A475002460B6 /* JZHUIDynamicAnimator.m */; };
+		80CD8CF120BEE620002C4466 /* JZHNFDownloadButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD8CF020BEE620002C4466 /* JZHNFDownloadButtonManager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -170,6 +171,8 @@
 		21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTModalHostView+JZHUseCustomDelegate.m"; sourceTree = "<group>"; };
 		21B2FB4F20B6A474002460B6 /* JZHUIDynamicAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZHUIDynamicAnimator.h; sourceTree = "<group>"; };
 		21B2FB5020B6A475002460B6 /* JZHUIDynamicAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZHUIDynamicAnimator.m; sourceTree = "<group>"; };
+		80CD8CEF20BEE620002C4466 /* JZHNFDownloadButtonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHNFDownloadButtonManager.h; sourceTree = "<group>"; };
+		80CD8CF020BEE620002C4466 /* JZHNFDownloadButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHNFDownloadButtonManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -266,6 +269,8 @@
 			children = (
 				212A52AC20BCFA360036A441 /* JZHNFDownloadButton.h */,
 				212A52AD20BCFA360036A441 /* JZHNFDownloadButton.m */,
+				80CD8CEF20BEE620002C4466 /* JZHNFDownloadButtonManager.h */,
+				80CD8CF020BEE620002C4466 /* JZHNFDownloadButtonManager.m */,
 				212A52AF20BCFBB10036A441 /* JZHStyleKit.h */,
 				212A52B020BCFBB10036A441 /* JZHStyleKit.m */,
 				212A52B220BCFC070036A441 /* JZHResizingBehavior.h */,
@@ -549,6 +554,7 @@
 				212A528C20BBC1540036A441 /* JZHFavoriteButton.m in Sources */,
 				21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */,
 				21B2FAF020B51389002460B6 /* JZHStarWarsGLAnimator.m in Sources */,
+				80CD8CF120BEE620002C4466 /* JZHNFDownloadButtonManager.m in Sources */,
 				21B2FAF820B5437E002460B6 /* JZHSpriteRender.m in Sources */,
 				21AF0E7520AD7F730035C821 /* JZHFireworkButtonViewManager.m in Sources */,
 				21AF0E6F20AD74300035C821 /* JZHFireworkView.m in Sources */,

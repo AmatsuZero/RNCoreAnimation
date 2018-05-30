@@ -12,6 +12,7 @@ import RNDrawingboard from "./src/RNDrawingboard"
 import RNStarOverlay from "./src/Starwars/RNStarOverlayView"
 import RNProfileButton from "./src/Starwars/RNProfileButton"
 import RNFavoriteButton from "./src/RNFavoriteButton"
+import RNNFDownloadButton from "./src/RNNFDownloadButton"
 
 export {
     RNCircleView,
@@ -27,5 +28,6 @@ export {
     RNDrawingboard,
     RNStarOverlay,
     RNProfileButton,
-    RNFavoriteButton
+    RNFavoriteButton,
+    RNNFDownloadButton
 }

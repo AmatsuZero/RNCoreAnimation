@@ -504,4 +504,65 @@ checkRevealManipulable:(CGFloat)checkRevealManipulable {
     CGContextRestoreGState(context);
 }
 
++ (void)drawDashMoveState:(CGRect)targetFrame resizing:(JZHResizingBehavior *)resizing palette:(JZHPalette *)palette dashMoveManipulable:(CGFloat)dashMoveManipulable {
+    // General Declarations
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    // Resize to Target Frame
+    CGContextSaveGState(context);
+    CGRect resizeFrame = [resizing apply:CGRectMake(0, 0, 50, 50) to:targetFrame];
+    CGContextTranslateCTM(context, CGRectGetMinX(resizeFrame), CGRectGetMinY(resizeFrame));
+    CGContextScaleCTM(context, CGRectGetWidth(resizeFrame)/50, CGRectGetHeight(resizeFrame)/50);
+    
+    // Variable Declarations
+    CGFloat dashMoveCircleRotation = dashMoveManipulable * 15 * -1;
+    CGFloat dashMoveDashedCircleDash = ABS(dashMoveCircleRotation) > 15 ? 0 : 5;
+    CGFloat dashMoveDashedCircleGap = ABS(dashMoveCircleRotation) >= 15 ? 0 : 3.5;
+    CGFloat dashMoveDashedCirclePhase = ABS(dashMoveCircleRotation) > 15 ? 0 : 5;
+    
+    // Moving Declarations
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+    CGContextRotateCTM(context, -dashMoveCircleRotation * M_PI / 180);
+    
+    UIBezierPath* movingDashedCirclePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(-15, -15, 30, 30)];
+    [palette.downloadColor setStroke];
+    movingDashedCirclePath.lineWidth = 1;
+    CGContextSaveGState(context);
+    CGFloat lengths[2]  = {dashMoveDashedCircleDash, dashMoveDashedCircleGap};
+    CGContextSetLineDash(context, dashMoveDashedCirclePhase, lengths, 2);
+    [movingDashedCirclePath stroke];
+    CGContextRestoreGState(context);
+    CGContextRestoreGState(context);
+    
+    // Dashed Circle Drawing
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+    
+    UIBezierPath* dashedCiclePath = [UIBezierPath bezierPath];
+    [dashedCiclePath moveToPoint:CGPointMake(15, 0)];
+    [dashedCiclePath addCurveToPoint:CGPointMake(0, 15) controlPoint1:CGPointMake(15, 8.28) controlPoint2:CGPointMake(8.28, 15)];
+    [dashedCiclePath addCurveToPoint:CGPointMake(-15, 0) controlPoint1:CGPointMake(-8.28, 15) controlPoint2:CGPointMake(-15, 8.28)];
+    [dashedCiclePath addCurveToPoint:CGPointMake(0, -15) controlPoint1:CGPointMake(-15, 8.28) controlPoint2:CGPointMake(-8.28, -15)];
+    [dashedCiclePath addCurveToPoint:CGPointMake(15, 0) controlPoint1:CGPointMake(8.28, -15) controlPoint2:CGPointMake(15, -8.28)];
+    [dashedCiclePath closePath];
+    [palette.downloadColor setStroke];
+    dashedCiclePath.lineWidth = 1;
+    CGContextSaveGState(context);
+    CGFloat dashes[2] = {5, 3.5};
+    CGContextSetLineDash(context, 5, dashes, 2);
+    [dashedCiclePath stroke];
+    CGContextRestoreGState(context);
+    CGContextRestoreGState(context);
+    
+    // Square Drawing
+    CGContextSaveGState(context);
+    CGContextTranslateCTM(context, 25, 25);
+    
+    UIBezierPath* squarePath = [UIBezierPath bezierPathWithOvalInRect:CGRectMake(-3.75, -3.75, 7.5, 7.5)];
+    [palette.downloadColor setFill];
+    [squarePath fill];
+    CGContextRestoreGState(context);
+    CGContextRestoreGState(context);
+}
+
 @end

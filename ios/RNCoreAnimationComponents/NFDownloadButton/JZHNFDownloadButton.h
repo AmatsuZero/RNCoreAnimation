@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <React/RCTComponent.h>
 
 typedef NS_ENUM(NSUInteger, JZHDownloadButtonState) {
     toDownload = 0,
@@ -25,5 +26,6 @@ typedef NS_ENUM(NSUInteger, JZHDownloadButtonState) {
 @property(nonatomic, copy, nullable)NSString* deviceColor;
 @property(nonatomic, assign)CGFloat downloadPercent;
 @property(nonatomic, assign)JZHDownloadButtonState downloadState;
+@property(nonatomic, copy, nullable)RCTBubblingEventBlock onNewState;
 
 @end
