@@ -29,9 +29,9 @@ RCT_EXPORT_VIEW_PROPERTY(onDeselect, RCTBubblingEventBlock)
 
 - (void)tappedButton:(JZHFavoriteButton*)sender {
     if (sender.isSelected)
-        [sender select];
-    else
         [sender deselect];
+    else
+        [sender select];
 }
 
 @end

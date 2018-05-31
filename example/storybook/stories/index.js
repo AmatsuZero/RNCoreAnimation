@@ -21,6 +21,7 @@ import RNAnimatedText from "./AnimatedText"
 import DrawingBoard from "./Drawingboard/index"
 import Starwars from "./Starwars"
 import FavoriteButton from "./FavoriteButton"
+import NFDownloadButton from "./NFDownloadButton"
 
 storiesOf('Welcome', module).add('to Storybook', () => <Welcome showApp={linkTo('Button')} />);
 
@@ -75,3 +76,6 @@ storiesOf("Star Wars", module)
 
 storiesOf("Favorite Button", module)
     .add("Favorite Button", () => <FavoriteButton/>)
+
+storiesOf("Netflix DownloadButton", module)
+    .add("Show", () => <NFDownloadButton/>)
