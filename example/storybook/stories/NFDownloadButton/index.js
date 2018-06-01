@@ -14,32 +14,41 @@ export default class RNNFDownoladButtonDemo extends Component {
             alignSelf: 'stretch'
         },
         button: {
-          width: 100,
-          height: 100
+          width: 200,
+          height: 200
         }
     }
     constructor(props) {
         super(props)
         this.state = {
             progress: 0,
-            downloadState: "toDownload"
+            downloadState: "readyToDownload"
         }
-    }
-    componentDidMount() {
-        // const timer = setInterval(() => {
-        //     if (this.state.progress <= 1)
-        //         this.setState({
-        //             progress: this.state.progress += 0.1
-        //         })
-        //     else
-        //         clearInterval(timer)
-        // }, 1000)
     }
     render() {
         return <View style={this.styles.container}>
             <RNNFDownloadButton
                 style={this.styles.button}
                 downloadPercent={this.state.progress}
+                onNewState={ target => {
+                    const { state } = target.nativeEvent
+                    if (state !== "readyToDownload") return
+                    setTimeout(() => this.setState({
+                        progress: 0.25
+                    }), 2000)
+                    setTimeout(() => this.setState({
+                        progress: 0.6
+                    }), 3000)
+                    setTimeout(() => this.setState({
+                        progress: 0.7
+                    }), 4000)
+                    setTimeout(() => this.setState({
+                        progress: 0.95
+                    }), 5000)
+                    setTimeout(() => this.setState({
+                        progress: 1
+                    }), 6000)
+                }}
             />
         </View>
     }

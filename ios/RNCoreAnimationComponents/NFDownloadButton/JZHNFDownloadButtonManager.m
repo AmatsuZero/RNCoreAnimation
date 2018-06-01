@@ -36,4 +36,20 @@ RCT_EXPORT_VIEW_PROPERTY(downloadPercent, CGFloat)
 RCT_EXPORT_VIEW_PROPERTY(downloadState, JZHDownloadButtonState)
 RCT_EXPORT_VIEW_PROPERTY(onNewState, RCTBubblingEventBlock)
 
+- (__kindof UIView *)view {
+    JZHNFDownloadButton* button = [[JZHNFDownloadButton alloc] init];
+    [button addTarget:self
+               action:@selector(changeState:)
+     forControlEvents:UIControlEventTouchUpInside];
+    return button;
+}
+
+- (void)changeState:(JZHNFDownloadButton*) sender {
+    if (sender.downloadState == toDownload) {
+        sender.downloadState = willDownload;
+    } else if (sender.downloadState == downloaded) {
+        sender.downloadState = toDownload;
+    }
+}
+
 @end
