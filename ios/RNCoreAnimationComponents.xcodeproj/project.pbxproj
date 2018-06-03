@@ -56,6 +56,17 @@
 		21B2FAFE20B55D4C002460B6 /* JZHModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FAFD20B55D4C002460B6 /* JZHModalTransitionDelegate.m */; };
 		21B2FB0420B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */; };
 		21B2FB5120B6A475002460B6 /* JZHUIDynamicAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB5020B6A475002460B6 /* JZHUIDynamicAnimator.m */; };
+		8088B5ED20C36D6500967780 /* NSArray+JZHLoadash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5EC20C36D6500967780 /* NSArray+JZHLoadash.m */; };
+		8088B5F620C3878500967780 /* JZHCGValueManipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5F420C3878500967780 /* JZHCGValueManipulation.c */; };
+		8088B5F920C394F000967780 /* UIView+JZHGrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5F820C394F000967780 /* UIView+JZHGrow.m */; };
+		8088B5FD20C3987700967780 /* JZHCircularGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5FC20C3987700967780 /* JZHCircularGradientLayer.m */; };
+		8088B60020C39FDA00967780 /* UIBezierPath+JZHBezierPathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5FF20C39FDA00967780 /* UIBezierPath+JZHBezierPathHelper.m */; };
+		8088B60320C3CF5700967780 /* JZHLiquittableCircle.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B60220C3CF5700967780 /* JZHLiquittableCircle.m */; };
+		8088B60620C3D6F000967780 /* JZHSimpleCircleLiquidEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B60520C3D6F000967780 /* JZHSimpleCircleLiquidEngine.m */; };
+		8088B60920C4030B00967780 /* JZHLiquidLoadEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B60820C4030B00967780 /* JZHLiquidLoadEffect.m */; };
+		8088B60C20C4053300967780 /* JZHLiquidLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B60B20C4053300967780 /* JZHLiquidLoader.m */; };
+		8088B61220C40BE800967780 /* JZHLiquidCircleEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B61120C40BE800967780 /* JZHLiquidCircleEffect.m */; };
+		8088B61520C4129800967780 /* JZHLiquidLineEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B61420C4129800967780 /* JZHLiquidLineEffect.m */; };
 		80CD8CF120BEE620002C4466 /* JZHNFDownloadButtonManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 80CD8CF020BEE620002C4466 /* JZHNFDownloadButtonManager.m */; };
 /* End PBXBuildFile section */
 
@@ -171,6 +182,28 @@
 		21B2FB0320B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTModalHostView+JZHUseCustomDelegate.m"; sourceTree = "<group>"; };
 		21B2FB4F20B6A474002460B6 /* JZHUIDynamicAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JZHUIDynamicAnimator.h; sourceTree = "<group>"; };
 		21B2FB5020B6A475002460B6 /* JZHUIDynamicAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JZHUIDynamicAnimator.m; sourceTree = "<group>"; };
+		8088B5EB20C36D6500967780 /* NSArray+JZHLoadash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JZHLoadash.h"; sourceTree = "<group>"; };
+		8088B5EC20C36D6500967780 /* NSArray+JZHLoadash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JZHLoadash.m"; sourceTree = "<group>"; };
+		8088B5F420C3878500967780 /* JZHCGValueManipulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = JZHCGValueManipulation.c; sourceTree = "<group>"; };
+		8088B5F520C3878500967780 /* JZHCGValueManipulation.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHCGValueManipulation.h; sourceTree = "<group>"; };
+		8088B5F720C394F000967780 /* UIView+JZHGrow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+JZHGrow.h"; sourceTree = "<group>"; };
+		8088B5F820C394F000967780 /* UIView+JZHGrow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+JZHGrow.m"; sourceTree = "<group>"; };
+		8088B5FB20C3987700967780 /* JZHCircularGradientLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHCircularGradientLayer.h; sourceTree = "<group>"; };
+		8088B5FC20C3987700967780 /* JZHCircularGradientLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHCircularGradientLayer.m; sourceTree = "<group>"; };
+		8088B5FE20C39FDA00967780 /* UIBezierPath+JZHBezierPathHelper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+JZHBezierPathHelper.h"; sourceTree = "<group>"; };
+		8088B5FF20C39FDA00967780 /* UIBezierPath+JZHBezierPathHelper.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+JZHBezierPathHelper.m"; sourceTree = "<group>"; };
+		8088B60120C3CF5700967780 /* JZHLiquittableCircle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLiquittableCircle.h; sourceTree = "<group>"; };
+		8088B60220C3CF5700967780 /* JZHLiquittableCircle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLiquittableCircle.m; sourceTree = "<group>"; };
+		8088B60420C3D6F000967780 /* JZHSimpleCircleLiquidEngine.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHSimpleCircleLiquidEngine.h; sourceTree = "<group>"; };
+		8088B60520C3D6F000967780 /* JZHSimpleCircleLiquidEngine.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHSimpleCircleLiquidEngine.m; sourceTree = "<group>"; };
+		8088B60720C4030B00967780 /* JZHLiquidLoadEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLiquidLoadEffect.h; sourceTree = "<group>"; };
+		8088B60820C4030B00967780 /* JZHLiquidLoadEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLiquidLoadEffect.m; sourceTree = "<group>"; };
+		8088B60A20C4053300967780 /* JZHLiquidLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLiquidLoader.h; sourceTree = "<group>"; };
+		8088B60B20C4053300967780 /* JZHLiquidLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLiquidLoader.m; sourceTree = "<group>"; };
+		8088B61020C40BE800967780 /* JZHLiquidCircleEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLiquidCircleEffect.h; sourceTree = "<group>"; };
+		8088B61120C40BE800967780 /* JZHLiquidCircleEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLiquidCircleEffect.m; sourceTree = "<group>"; };
+		8088B61320C4129800967780 /* JZHLiquidLineEffect.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLiquidLineEffect.h; sourceTree = "<group>"; };
+		8088B61420C4129800967780 /* JZHLiquidLineEffect.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLiquidLineEffect.m; sourceTree = "<group>"; };
 		80CD8CEF20BEE620002C4466 /* JZHNFDownloadButtonManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHNFDownloadButtonManager.h; sourceTree = "<group>"; };
 		80CD8CF020BEE620002C4466 /* JZHNFDownloadButtonManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHNFDownloadButtonManager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -205,6 +238,7 @@
 		2129D39920AACB8B002441FD /* RNCoreAnimationComponents */ = {
 			isa = PBXGroup;
 			children = (
+				8088B5FA20C3984C00967780 /* LiquidLoader */,
 				212A52AB20BCF7BD0036A441 /* NFDownloadButton */,
 				2176919920BBBCEB00516533 /* FavoriteButton */,
 				21B2FAE420B509ED002460B6 /* CustomModal */,
@@ -260,6 +294,14 @@
 				2129D51220ABEF0F002441FD /* NSString+JZHColorConvertor.m */,
 				2129D47320AB1AD9002441FD /* RCTConvert+SlideMenu.h */,
 				2129D47420AB1AD9002441FD /* RCTConvert+SlideMenu.m */,
+				8088B5EB20C36D6500967780 /* NSArray+JZHLoadash.h */,
+				8088B5EC20C36D6500967780 /* NSArray+JZHLoadash.m */,
+				8088B5F720C394F000967780 /* UIView+JZHGrow.h */,
+				8088B5F820C394F000967780 /* UIView+JZHGrow.m */,
+				8088B5FE20C39FDA00967780 /* UIBezierPath+JZHBezierPathHelper.h */,
+				8088B5FF20C39FDA00967780 /* UIBezierPath+JZHBezierPathHelper.m */,
+				8088B5F420C3878500967780 /* JZHCGValueManipulation.c */,
+				8088B5F520C3878500967780 /* JZHCGValueManipulation.h */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -452,6 +494,27 @@
 			path = StarWarsGLAnimator;
 			sourceTree = "<group>";
 		};
+		8088B5FA20C3984C00967780 /* LiquidLoader */ = {
+			isa = PBXGroup;
+			children = (
+				8088B5FB20C3987700967780 /* JZHCircularGradientLayer.h */,
+				8088B5FC20C3987700967780 /* JZHCircularGradientLayer.m */,
+				8088B60120C3CF5700967780 /* JZHLiquittableCircle.h */,
+				8088B60220C3CF5700967780 /* JZHLiquittableCircle.m */,
+				8088B60420C3D6F000967780 /* JZHSimpleCircleLiquidEngine.h */,
+				8088B60520C3D6F000967780 /* JZHSimpleCircleLiquidEngine.m */,
+				8088B60720C4030B00967780 /* JZHLiquidLoadEffect.h */,
+				8088B60820C4030B00967780 /* JZHLiquidLoadEffect.m */,
+				8088B61020C40BE800967780 /* JZHLiquidCircleEffect.h */,
+				8088B61120C40BE800967780 /* JZHLiquidCircleEffect.m */,
+				8088B61320C4129800967780 /* JZHLiquidLineEffect.h */,
+				8088B61420C4129800967780 /* JZHLiquidLineEffect.m */,
+				8088B60A20C4053300967780 /* JZHLiquidLoader.h */,
+				8088B60B20C4053300967780 /* JZHLiquidLoader.m */,
+			);
+			path = LiquidLoader;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -510,8 +573,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				212A52BA20BD089A0036A441 /* JZHDownloadButtonLayer.m in Sources */,
+				8088B5FD20C3987700967780 /* JZHCircularGradientLayer.m in Sources */,
+				8088B60920C4030B00967780 /* JZHLiquidLoadEffect.m in Sources */,
 				2129D45920AADFA8002441FD /* JZHGooeySlideMenu.m in Sources */,
+				8088B5ED20C36D6500967780 /* NSArray+JZHLoadash.m in Sources */,
+				8088B5F920C394F000967780 /* UIView+JZHGrow.m in Sources */,
 				2129D51320ABEF0F002441FD /* NSString+JZHColorConvertor.m in Sources */,
+				8088B60620C3D6F000967780 /* JZHSimpleCircleLiquidEngine.m in Sources */,
 				21B2FAD320B430B0002460B6 /* CircularRevealAnimator.m in Sources */,
 				21B2FB5120B6A475002460B6 /* JZHUIDynamicAnimator.m in Sources */,
 				21B2FB0420B57AD3002460B6 /* RCTModalHostView+JZHUseCustomDelegate.m in Sources */,
@@ -533,7 +601,9 @@
 				21B2FAFB20B543CE002460B6 /* JZHViewTexture.m in Sources */,
 				212A52B720BD046F0036A441 /* JZHPalette.m in Sources */,
 				21B2FAF520B51589002460B6 /* JZHSprite.m in Sources */,
+				8088B61520C4129800967780 /* JZHLiquidLineEffect.m in Sources */,
 				21B2FA5820B3BE04002460B6 /* JZHStarOverlayView.m in Sources */,
+				8088B60020C39FDA00967780 /* UIBezierPath+JZHBezierPathHelper.m in Sources */,
 				212A528F20BBEB960036A441 /* JZHFavoriteButtonViewManager.m in Sources */,
 				21AF0EA320ADC0A90035C821 /* JZHCardViewManager.m in Sources */,
 				212A52B120BCFBB10036A441 /* JZHStyleKit.m in Sources */,
@@ -545,8 +615,10 @@
 				21AF0E5B20AD43F10035C821 /* JZHDynamicCover.m in Sources */,
 				2129D45F20AAEA7F002441FD /* JZHGooeySlideMenuViewManager.m in Sources */,
 				21B2FAD020B42DD3002460B6 /* JZHProfileButton.m in Sources */,
+				8088B60320C3CF5700967780 /* JZHLiquittableCircle.m in Sources */,
 				215597EB20AEC31E00B908C0 /* JZHJumpStar.m in Sources */,
 				21B2FAFE20B55D4C002460B6 /* JZHModalTransitionDelegate.m in Sources */,
+				8088B60C20C4053300967780 /* JZHLiquidLoader.m in Sources */,
 				215597EE20AEC69A00B908C0 /* JZHJumpStarViewManager.m in Sources */,
 				21AF0E5E20AD56490035C821 /* JZHDynamicCoverViewManager.m in Sources */,
 				21B2F98220B139CC002460B6 /* JZHAnimatedTextViewManager.m in Sources */,
@@ -556,6 +628,8 @@
 				21B2FAF020B51389002460B6 /* JZHStarWarsGLAnimator.m in Sources */,
 				80CD8CF120BEE620002C4466 /* JZHNFDownloadButtonManager.m in Sources */,
 				21B2FAF820B5437E002460B6 /* JZHSpriteRender.m in Sources */,
+				8088B5F620C3878500967780 /* JZHCGValueManipulation.c in Sources */,
+				8088B61220C40BE800967780 /* JZHLiquidCircleEffect.m in Sources */,
 				21AF0E7520AD7F730035C821 /* JZHFireworkButtonViewManager.m in Sources */,
 				21AF0E6F20AD74300035C821 /* JZHFireworkView.m in Sources */,
 			);
