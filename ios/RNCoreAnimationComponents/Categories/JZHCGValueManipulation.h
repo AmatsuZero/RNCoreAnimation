@@ -59,4 +59,5 @@ CGPoint CGRectGetCenter(CGRect);
 CGFloat CGMathRadToDeg(CGFloat rad);
 CGFloat CGMathDegToRad(CGFloat deg);
 CGPoint CGMathCirclePoint(CGPoint center, CGFloat radius, CGFloat rad);
+
 #endif /* JZHCGValueManipulation_h */
