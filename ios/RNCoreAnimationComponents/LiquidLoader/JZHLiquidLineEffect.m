@@ -9,6 +9,7 @@
 #import "JZHLiquidLineEffect.h"
 #import "JZHCGValueManipulation.h"
 #import "NSArray+JZHLoadash.h"
+#import "JZHLiquidLoader.h"
 
 @implementation JZHLiquidLineEffect
 

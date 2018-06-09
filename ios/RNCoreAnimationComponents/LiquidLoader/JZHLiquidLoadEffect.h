@@ -9,8 +9,8 @@
 #import <Foundation/Foundation.h>
 #import "JZHSimpleCircleLiquidEngine.h"
 #import "JZHLiquittableCircle.h"
-#import "JZHLiquidLoader.h"
 
+@class JZHLiquidLoader;
 @interface JZHLiquidLoadEffect : NSObject
 
 @property(nonatomic, assign)NSUInteger numberOfCircles;

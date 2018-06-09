@@ -58,6 +58,7 @@
 		21B2FB5120B6A475002460B6 /* JZHUIDynamicAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 21B2FB5020B6A475002460B6 /* JZHUIDynamicAnimator.m */; };
 		807A6D0320C6267400F4BEE4 /* RCTViewManager+JZHTagManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 807A6D0220C6267400F4BEE4 /* RCTViewManager+JZHTagManager.m */; };
 		8081995C20CA110A00C19568 /* UIColor+JZHColorExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = 8081995B20CA110A00C19568 /* UIColor+JZHColorExtensions.m */; };
+		808199D020CB636400C19568 /* JZHLiquidLoaderViewManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 808199CF20CB636400C19568 /* JZHLiquidLoaderViewManager.m */; };
 		8088B5ED20C36D6500967780 /* NSArray+JZHLoadash.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5EC20C36D6500967780 /* NSArray+JZHLoadash.m */; };
 		8088B5F620C3878500967780 /* JZHCGValueManipulation.c in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5F420C3878500967780 /* JZHCGValueManipulation.c */; };
 		8088B5F920C394F000967780 /* UIView+JZHGrow.m in Sources */ = {isa = PBXBuildFile; fileRef = 8088B5F820C394F000967780 /* UIView+JZHGrow.m */; };
@@ -189,6 +190,8 @@
 		807A6D0220C6267400F4BEE4 /* RCTViewManager+JZHTagManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTViewManager+JZHTagManager.m"; sourceTree = "<group>"; };
 		8081995A20CA110A00C19568 /* UIColor+JZHColorExtensions.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+JZHColorExtensions.h"; sourceTree = "<group>"; };
 		8081995B20CA110A00C19568 /* UIColor+JZHColorExtensions.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+JZHColorExtensions.m"; sourceTree = "<group>"; };
+		808199CE20CB636400C19568 /* JZHLiquidLoaderViewManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JZHLiquidLoaderViewManager.h; sourceTree = "<group>"; };
+		808199CF20CB636400C19568 /* JZHLiquidLoaderViewManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JZHLiquidLoaderViewManager.m; sourceTree = "<group>"; };
 		8088B5EB20C36D6500967780 /* NSArray+JZHLoadash.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSArray+JZHLoadash.h"; sourceTree = "<group>"; };
 		8088B5EC20C36D6500967780 /* NSArray+JZHLoadash.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSArray+JZHLoadash.m"; sourceTree = "<group>"; };
 		8088B5F420C3878500967780 /* JZHCGValueManipulation.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = JZHCGValueManipulation.c; sourceTree = "<group>"; };
@@ -531,6 +534,8 @@
 				8088B61420C4129800967780 /* JZHLiquidLineEffect.m */,
 				8088B60A20C4053300967780 /* JZHLiquidLoader.h */,
 				8088B60B20C4053300967780 /* JZHLiquidLoader.m */,
+				808199CE20CB636400C19568 /* JZHLiquidLoaderViewManager.h */,
+				808199CF20CB636400C19568 /* JZHLiquidLoaderViewManager.m */,
 			);
 			path = LiquidLoader;
 			sourceTree = "<group>";
@@ -659,6 +664,7 @@
 				212A528C20BBC1540036A441 /* JZHFavoriteButton.m in Sources */,
 				21AF0E3D20AD32450035C821 /* JZHLoadingHUD.m in Sources */,
 				21B2FAF020B51389002460B6 /* JZHStarWarsGLAnimator.m in Sources */,
+				808199D020CB636400C19568 /* JZHLiquidLoaderViewManager.m in Sources */,
 				8081995C20CA110A00C19568 /* UIColor+JZHColorExtensions.m in Sources */,
 				80CD8CF120BEE620002C4466 /* JZHNFDownloadButtonManager.m in Sources */,
 				21B2FAF820B5437E002460B6 /* JZHSpriteRender.m in Sources */,

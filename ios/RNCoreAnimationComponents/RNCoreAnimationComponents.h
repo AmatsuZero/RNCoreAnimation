@@ -21,3 +21,4 @@
 #import "JZHFavoriteButtonViewManager.h"
 #import "JZHNFDownloadButtonManager.h"
 #import "RCTModalHostView+JZHUseCustomDelegate.h"
+#import "JZHLiquidLoaderViewManager.h"

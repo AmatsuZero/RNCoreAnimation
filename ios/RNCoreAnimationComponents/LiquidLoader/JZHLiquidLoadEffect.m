@@ -7,6 +7,7 @@
 //
 
 #import "JZHLiquidLoadEffect.h"
+#import "JZHLiquidLoader.h"
 
 @implementation JZHLiquidLoadEffect
 

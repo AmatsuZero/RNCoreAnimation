@@ -10,4 +10,9 @@
 
 @interface JZHLiquidLoader : UIView
 
+@property(nonatomic, strong)NSDictionary<NSString*, id>* effect;
+
+- (void)show;
+- (void)hide;
+
 @end
